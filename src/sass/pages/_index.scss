@@ -1,0 +1,55 @@
+// @forward "./home";
+// @forward "./menu";
+@import "../utils/variables";
+@import "../utils/placeholder";
+@import "../utils/mixin";
+
+.localisation {
+  @include flex(center, center, row);
+  background-color: $dark-grey;
+  p {
+    @extend %flex;
+    height: 3em;
+    margin-left: 1em;
+  }
+}
+
+.info {
+  background-color: $light-grey;
+  height: auto;
+  @include flex(space-around, center, column);
+  gap: 1.5em;
+  h2 {
+    margin: 1em 15% 0;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    margin: 0 12%;
+  }
+}
+
+.fonctionnement {
+  @extend %border;
+  margin-top: 2em;
+  h3 {
+    margin-left: 1em;
+    margin-top: 2em;
+  }
+  &_list {
+    @include flex(space-between, center, column);
+    gap: 1.2em;
+    @include size(100%, auto);
+    margin: 1.5em 0 3em;
+    &_item {
+      @extend %border;
+      background-color: $light-grey;
+      @include flex(center, center, row);
+      @include size(20em, 5em);
+      border-radius: 30px;
+      p {
+        margin-left: 2em;
+      }
+    }
+  }
+}

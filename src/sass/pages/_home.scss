@@ -1,0 +1,9 @@
+@import "../utils/variables";
+@import "../utils/placeholder";
+@import "../utils/mixin";
+
+body {
+  max-width: 40rem;
+
+  margin: 0 auto;
+}

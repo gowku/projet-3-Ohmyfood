@@ -1,0 +1,16 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+button {
+  @include font(0.9rem, 600);
+  background-color: $primary;
+  color: white;
+  border-style: none;
+  box-shadow: 0px 8px 12px 1px #6e6e6e;
+}
+
+.explorer {
+  @include size(55%, 3em);
+  border-radius: 30px;
+  margin-bottom: 2em;
+}

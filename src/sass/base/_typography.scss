@@ -1,0 +1,39 @@
+@import "../utils/mixin";
+@import "../components/button";
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Shrikhand", cursive;
+}
+
+h2 {
+  @include font(1.2rem, 100);
+}
+
+.localisation {
+  i {
+    height: 1.4em;
+  }
+  p {
+    @include font(1rem, 500);
+  }
+}
+
+.info {
+  p {
+    @include font(1rem, 300);
+  }
+}
+
+.fonctionnement h3 {
+  @include font(1.2rem, 400);
+}

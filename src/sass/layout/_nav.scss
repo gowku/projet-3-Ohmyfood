@@ -1,0 +1,10 @@
+@import "../utils/placeholder";
+nav {
+  height: 4em;
+  @extend %flex;
+  box-shadow: 0 -10px black;
+
+  img {
+    height: 1.7em;
+  }
+}
