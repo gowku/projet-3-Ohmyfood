@@ -1,0 +1,6 @@
+@use "utils" as *;
+@use "base" as *;
+
+img {
+  @include size(250px, 250px);
+}
