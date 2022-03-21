@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
-.fonctionnement_list_item, .fonctionnement {
+footer {
   border: black solid 1px;
 }
 
@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
 }
 
-.fonctionnement_list_item, .fonctionnement {
+footer {
   border: black solid 1px;
 }
 
@@ -33,7 +33,7 @@ nav img {
   height: 1.7em;
 }
 
-.fonctionnement_list_item, .fonctionnement {
+footer {
   border: black solid 1px;
 }
 
@@ -43,11 +43,47 @@ nav img {
   align-items: center;
 }
 
+.logo-footer {
+  width: 8rem;
+  height: 1.2rem;
+  background-color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #353535;
+  padding: 2rem 0;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer ul li {
+  display: flex;
+  justify-content: 0;
+  align-items: left;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: white;
+  margin-left: 1rem;
+}
+footer ul li a {
+  color: white;
+}
+
 .localisation {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  gap: 0;
   background-color: #eaeaea;
 }
 .localisation p {
@@ -62,7 +98,7 @@ nav img {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1.5rem;
 }
 .info h2 {
   margin: 1em 15% 0;
@@ -85,7 +121,7 @@ nav img {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  gap: 1.2em;
+  gap: 1.2rem;
   width: 100%;
   height: auto;
   margin: 1.5em 0 3em;
@@ -96,12 +132,114 @@ nav img {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 20em;
+  gap: 2rem;
+  width: 90%;
   height: 5em;
   border-radius: 30px;
+  position: relative;
 }
-.fonctionnement_list_item p {
-  margin-left: 2em;
+.fonctionnement_list_item svg {
+  height: 1.7em;
+  color: red;
+}
+.fonctionnement_list_item:nth-child(1)::before {
+  content: "1";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  color: white;
+}
+.fonctionnement_list_item:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  left: -0.7em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #9356dc;
+}
+.fonctionnement_list_item:nth-child(2)::before {
+  content: "2";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  color: white;
+}
+.fonctionnement_list_item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  left: -0.7em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #9356dc;
+}
+.fonctionnement_list_item:nth-child(3)::before {
+  content: "3";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  color: white;
+}
+.fonctionnement_list_item:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  left: -0.7em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #9356dc;
+}
+
+main {
+  padding: 5rem 0;
+  background-color: #f6f6f6;
+}
+main h3 {
+  margin-left: 1em;
+  padding-bottom: 2rem;
+}
+
+.container-restaurants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.card {
+  border-radius: 35px;
+  width: 95%;
+  height: 15rem;
+}
+.card img {
+  height: 14rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 35px 35px 0 0;
+}
+.card_body {
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  background-color: white;
+  border-radius: 0 0 35px 35px;
+}
+.card_body_left {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 2rem;
+  height: 100%;
+}
+.card_body_right {
+  margin-right: 2rem;
 }
 
 a {
@@ -157,14 +295,24 @@ h2 {
   font-weight: 300;
 }
 
-.fonctionnement h3 {
-  font-size: 1.2rem;
+h3 {
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
-img {
-  width: 250px;
-  height: 250px;
+.fonctionnement_list_item p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card_body_left-title {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.card_body-lieu {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */

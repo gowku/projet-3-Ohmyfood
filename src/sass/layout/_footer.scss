@@ -1,0 +1,21 @@
+.logo-footer {
+  @include size(8rem, 1.2rem);
+  background-color: white;
+}
+footer {
+  @include flex(center, left, column, 2rem);
+  background-color: $bg-footer;
+  @extend %border;
+  padding: 2rem 0;
+  ul {
+    @include flex(center, left, column, 0.5rem);
+    li {
+      @include flex(0, left, row, 0.5rem);
+      color: white;
+      margin-left: 1rem;
+      a {
+        color: white;
+      }
+    }
+  }
+}

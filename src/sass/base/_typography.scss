@@ -34,6 +34,16 @@ h2 {
   }
 }
 
-.fonctionnement h3 {
-  @include font(1.2rem, 400);
+h3 {
+  @include font(1.5rem, 400);
+}
+.fonctionnement_list_item p {
+  @include font(1.2rem, 500);
+}
+
+.card_body_left-title {
+  @include font(1.2rem, 100);
+}
+.card_body-lieu {
+  @include font(1.2rem, 300);
 }

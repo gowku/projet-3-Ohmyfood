@@ -5,7 +5,3 @@
 @import "./base/reset";
 @import "./base/fonts";
 @import "./base/typography";
-
-img {
-  @include size(250px, 250px);
-}

@@ -3,9 +3,10 @@
 @import "../utils/variables";
 @import "../utils/placeholder";
 @import "../utils/mixin";
+@import "../layout/footer";
 
 .localisation {
-  @include flex(center, center, row);
+  @include flex(center, center, row, 0);
   background-color: $dark-grey;
   p {
     @extend %flex;
@@ -17,8 +18,8 @@
 .info {
   background-color: $light-grey;
   height: auto;
-  @include flex(space-around, center, column);
-  gap: 1.5em;
+  @include flex(space-around, center, column, 1.5rem);
+
   h2 {
     margin: 1em 15% 0;
     text-align: center;
@@ -30,26 +31,88 @@
 }
 
 .fonctionnement {
-  @extend %border;
   margin-top: 2em;
   h3 {
     margin-left: 1em;
     margin-top: 2em;
   }
   &_list {
-    @include flex(space-between, center, column);
-    gap: 1.2em;
+    @include flex(space-between, center, column, 1.2rem);
+
     @include size(100%, auto);
     margin: 1.5em 0 3em;
     &_item {
-      @extend %border;
       background-color: $light-grey;
-      @include flex(center, center, row);
-      @include size(20em, 5em);
+      @include flex(center, center, row, 2rem);
+
+      @include size(90%, 5em);
       border-radius: 30px;
-      p {
-        margin-left: 2em;
+      position: relative;
+      svg {
+        height: 1.7em;
+        color: red;
       }
+      p {
+        //margin-left: 2em;
+      }
+
+      @for $i from 1 to 4 {
+        &:nth-child(#{$i})::before {
+          content: "#{$i}";
+          position: absolute;
+          left: 0;
+          z-index: 1;
+          color: white;
+        }
+        &:nth-child(#{$i})::after {
+          content: "";
+          position: absolute;
+          left: -0.7em;
+          @include size(2em, 2em);
+          border-radius: 50%;
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+main {
+  //margin-top: 5rem;
+  padding: 5rem 0;
+  background-color: $light-grey;
+  h3 {
+    margin-left: 1em;
+    padding-bottom: 2rem;
+  }
+}
+
+.container-restaurants {
+  @include flex(center, center, column, 5rem);
+}
+
+.card {
+  border-radius: 35px;
+  @include size(95%, 15rem);
+  img {
+    height: 14rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 35px 35px 0 0;
+  }
+  &_body {
+    height: 30%;
+    @include flex(space-between, center, row, 0);
+    background-color: white;
+    border-radius: 0 0 35px 35px;
+    &_left {
+      @include flex(center, left, column, 0.5rem);
+
+      margin-left: 2rem;
+      height: 100%;
+    }
+    &_right {
+      margin-right: 2rem;
     }
   }
 }
