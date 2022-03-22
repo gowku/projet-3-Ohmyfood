@@ -2,9 +2,15 @@
 nav {
   height: 4em;
   @extend %flex;
+  position: relative;
   box-shadow: 0 -10px black;
 
   img {
     height: 1.7em;
+  }
+  a {
+    position: absolute;
+    left: 0;
+    margin-left: 5%;
   }
 }

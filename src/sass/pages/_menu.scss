@@ -1,0 +1,103 @@
+@import "../base/typography";
+@import "../layout/nav";
+@import "../layout/footer";
+@import "../utils/keyframes";
+
+//.body_menu {
+//  position: relative;
+//}
+.header {
+  height: 15rem;
+
+  img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+//.main_menu {
+// @extend %border;
+// position: absolute;
+//}
+
+.resto-name {
+  @include flex(space-around, center, row, 0);
+  @extend %border;
+  padding-top: 3rem;
+  border-radius: 35px 35px 0 0;
+}
+.main-menu {
+  background-color: $light-grey;
+}
+
+.menu {
+  @include flex(space-between, left, column, 0);
+}
+
+.entree,
+.plats,
+.dessert {
+  &_title {
+    align-content: left;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    &::after {
+      content: "";
+      @include size(3.5rem, 4px);
+      @include border;
+      background-color: black;
+    }
+  }
+  &_cards {
+    @include flex(space-between, center, column, 2rem);
+    height: auto;
+    padding: 1rem 0;
+    &_card {
+      @include flex(space-between, flex-end, row, 0);
+      @extend %border;
+      border-radius: 35px;
+      @include size(95%, 6rem);
+      &_left {
+        @include flex(left, left, column, 0.5rem);
+        height: 100%;
+        margin-left: 1em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        &-title {
+          margin-top: 1rem;
+        }
+      }
+      &_right {
+        //padding: 0 2rem 1rem 0;
+        //@include flex(center, flex-end, row, 0);
+        display: flex;
+        @include border;
+        width: 10rem;
+        height: 100%;
+        transform: translateX(50%);
+        &:hover {
+          animation: translate-X 1s ease-in-out forwards;
+        }
+        &-price {
+          //@include border;
+          border: 2px solid red;
+          width: 50%;
+        }
+        &-span {
+          @include border;
+          border-radius: 0 35px 35px 0;
+          @include size(50%, 100%);
+          //display: none;
+        }
+      }
+    }
+  }
+}
+.commander {
+  @include flex(center, center, row, 0);
+  margin: 2rem 0;
+}

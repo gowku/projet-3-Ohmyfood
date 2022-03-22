@@ -4,6 +4,8 @@
 @import "../utils/placeholder";
 @import "../utils/mixin";
 @import "../layout/footer";
+@import "./_menu";
+@import "../utils/keyframes";
 
 .localisation {
   @include flex(center, center, row, 0);
@@ -17,7 +19,7 @@
 
 .info {
   background-color: $light-grey;
-  height: auto;
+  height: 20rem;
   @include flex(space-around, center, column, 1.5rem);
 
   h2 {
@@ -52,9 +54,6 @@
         height: 1.7em;
         color: red;
       }
-      p {
-        //margin-left: 2em;
-      }
 
       @for $i from 1 to 4 {
         &:nth-child(#{$i})::before {
@@ -77,7 +76,7 @@
   }
 }
 
-main {
+.principal_index {
   //margin-top: 5rem;
   padding: 5rem 0;
   background-color: $light-grey;
@@ -88,17 +87,30 @@ main {
 }
 
 .container-restaurants {
-  @include flex(center, center, column, 5rem);
+  @include flex(center, center, column, 4rem);
 }
 
 .card {
   border-radius: 35px;
-  @include size(95%, 15rem);
-  img {
-    height: 14rem;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 35px 35px 0 0;
+  @include size(95%, auto);
+  @include border;
+  padding-bottom: 1rem;
+  &_img {
+    @include border;
+    img {
+      //position: absolute;
+      height: 14rem;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 35px 35px 0 0;
+    }
+    p {
+      @include border;
+      @include size(6rem, 2rem);
+      @extend %flex;
+      //position: relative;
+      //right: 0;
+    }
   }
   &_body {
     height: 30%;

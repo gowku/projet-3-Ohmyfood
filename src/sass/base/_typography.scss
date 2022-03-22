@@ -47,3 +47,19 @@ h3 {
 .card_body-lieu {
   @include font(1.2rem, 300);
 }
+
+.resto-name-title {
+  @include font(2em, 200);
+}
+
+.entree_title .plats_title .dessert_title {
+  @include font(1.7em, 100);
+}
+.entree_cards_card_left .plats_cards_card_left .dessert_cards_card_left {
+  &-title {
+    @include font(1em, 300);
+  }
+  &-description {
+    @include font(1.1em, 300);
+  }
+}

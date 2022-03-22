@@ -1,6 +1,6 @@
 .logo-footer {
   @include size(8rem, 1.2rem);
-  background-color: white;
+  fill: white;
 }
 footer {
   @include flex(center, left, column, 2rem);
