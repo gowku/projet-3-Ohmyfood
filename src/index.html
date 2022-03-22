@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="/.public/css/style.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <nav>
@@ -54,11 +54,14 @@
         </div>
       </div>
     </div>
-    <main>
+    <main class="principal_index">
       <h3>Restaurants</h3>
       <div class="container-restaurants">
         <a href="/src/la-palette-du-gout.html" class="card">
-          <img src="../src/images/restaurants/palette-gout.jpg" alt="la palette du goût" />
+          <div class="card_img">
+            <img src="../src/images/restaurants/palette-gout.jpg" alt="la palette du goût" />
+            <p>Nouveau</p>
+          </div>
           <div class="card_body">
             <div class="card_body_left">
               <h4 class="card_body_left-title">La palette du goût</h4>
@@ -70,7 +73,10 @@
           </div>
         </a>
         <a href="/src/la-note-enchantee.html" class="card">
-          <img src="../src/images/restaurants/note-enchantee.jpg" alt="note-enchantee" />
+          <div class="card_img">
+            <img src="../src/images/restaurants/note-enchantee.jpg" alt="note-enchantee" />
+            <p>Nouveau</p>
+          </div>
           <div class="card_body">
             <div class="card_body_left">
               <h4 class="card_body_left-title">La note enchantée</h4>
@@ -82,7 +88,10 @@
           </div>
         </a>
         <a href="/src/a-la-francaise.html" class="card">
-          <img src="../src/images/restaurants/francaise.jpg" alt="A la Française" />
+          <div class="card_img">
+            <img src="../src/images/restaurants/francaise.jpg" alt="A la Française" />
+            <p>Nouveau</p>
+          </div>
           <div class="card_body">
             <div class="card_body_left">
               <h4 class="card_body_left-title">À la Française</h4>
@@ -94,7 +103,10 @@
           </div>
         </a>
         <a href="/src/le-delice-des-sens.html" class="card">
-          <img src="../src/images/restaurants/delice-sens.jpg" alt="Le délice des sens" />
+          <div class="card_img">
+            <img src="../src/images/restaurants/delice-sens.jpg" alt="Le délice des sens" />
+            <p>Nouveau</p>
+          </div>
           <div class="card_body">
             <div class="card_body_left">
               <h4 class="card_body_left-title">Le délice des sens</h4>
