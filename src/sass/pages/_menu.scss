@@ -1,5 +1,7 @@
+@import "../utils/variables";
 @import "../base/typography";
 @import "../layout/nav";
+@import "../components/heart";
 @import "../layout/footer";
 @import "../utils/keyframes";
 
@@ -26,8 +28,16 @@
   @extend %border;
   padding-top: 3rem;
   border-radius: 35px 35px 0 0;
+  &-hearts:hover {
+    .heart1 {
+      display: block;
+    }
+    .heart2 {
+      display: none;
+    }
+  }
 }
-.main-menu {
+main {
   background-color: $light-grey;
 }
 
@@ -38,6 +48,11 @@
 .entree,
 .plats,
 .dessert {
+  @for $i from 1 to 5 {
+    .carte-#{$i} > * {
+      animation: apparition-menu 0.6s $i * 0.2 linear;
+    }
+  }
   &_title {
     align-content: left;
     margin: 2rem 0;
@@ -46,8 +61,7 @@
     &::after {
       content: "";
       @include size(3.5rem, 4px);
-      @include border;
-      background-color: black;
+      background-color: $green;
     }
   }
   &_cards {
@@ -56,9 +70,11 @@
     padding: 1rem 0;
     &_card {
       @include flex(space-between, flex-end, row, 0);
-      @extend %border;
-      border-radius: 35px;
+      border-radius: 25px;
       @include size(95%, 6rem);
+      background-color: white;
+      overflow: hidden;
+      //animation: apparition-menu 5s ease-in-out forwards;
       &_left {
         @include flex(left, left, column, 0.5rem);
         height: 100%;
@@ -68,35 +84,53 @@
         overflow: hidden;
 
         &-title {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
           margin-top: 1rem;
+        }
+        &-description {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
       }
       &_right {
-        //padding: 0 2rem 1rem 0;
-        //@include flex(center, flex-end, row, 0);
         display: flex;
-        @include border;
         width: 10rem;
         height: 100%;
-        transform: translateX(50%);
+        margin-right: -5rem;
         &:hover {
-          animation: translate-X 1s ease-in-out forwards;
+          margin-right: 0;
+          transition: 0.5s ease;
+          & span i {
+            animation: check-spinner 1s ease-in-out;
+          }
         }
         &-price {
-          //@include border;
-          border: 2px solid red;
+          padding-top: 3rem;
           width: 50%;
+          border-radius: 0 25px 25px 0;
         }
         &-span {
-          @include border;
-          border-radius: 0 35px 35px 0;
+          @extend %flex;
+          border-radius: 0 25px 25px 0;
           @include size(50%, 100%);
-          //display: none;
+          background-color: $green;
+          i {
+            font-size: 1.8rem;
+            color: white;
+          }
         }
       }
     }
   }
 }
+
+.carte::before {
+  content: "";
+}
+
 .commander {
   @include flex(center, center, row, 0);
   margin: 2rem 0;

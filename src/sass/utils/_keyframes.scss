@@ -6,3 +6,34 @@
     transform: translateX(0%);
   }
 }
+
+@keyframes check-spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes apparition-menu {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// @for $i from 0 to $i {
+//   .card-#{$i} {
+//     animation: apparition-menu 1s ease-out;
+//     animation-delay: $i * 0.2s;
+//   }
+// }
+// @for $i from 0 to 4 {
+//   .carte-#{$i} {
+//     animation: apparition-menu 1s $i * 0.2 linear;
+//   }
+// }

@@ -7,12 +7,16 @@ footer {
   background-color: $bg-footer;
   @extend %border;
   padding: 2rem 0;
+
   ul {
     @include flex(center, left, column, 0.5rem);
     li {
       @include flex(0, left, row, 0.5rem);
       color: white;
       margin-left: 1rem;
+      i {
+        color: white !important;
+      }
       a {
         color: white;
       }

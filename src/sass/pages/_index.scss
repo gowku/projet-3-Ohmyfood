@@ -1,15 +1,17 @@
-// @forward "./home";
-// @forward "./menu";
 @import "../utils/variables";
 @import "../utils/placeholder";
 @import "../utils/mixin";
-@import "../layout/footer";
 @import "./_menu";
 @import "../utils/keyframes";
+@import "../components/heart";
+@import "../layout/footer";
 
 .localisation {
   @include flex(center, center, row, 0);
   background-color: $dark-grey;
+  i {
+    color: black !important;
+  }
   p {
     @extend %flex;
     height: 3em;
@@ -93,38 +95,65 @@
 .card {
   border-radius: 35px;
   @include size(95%, auto);
-  @include border;
-  padding-bottom: 1rem;
+  box-shadow: 0px 0px 5px 1px #6e6e6e;
+
   &_img {
-    @include border;
+    position: relative;
+
     img {
-      //position: absolute;
       height: 14rem;
       width: 100%;
       object-fit: cover;
       border-radius: 35px 35px 0 0;
     }
     p {
-      @include border;
       @include size(6rem, 2rem);
       @extend %flex;
-      //position: relative;
-      //right: 0;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background-color: $green;
+      color: $color-new;
     }
   }
   &_body {
-    height: 30%;
     @include flex(space-between, center, row, 0);
     background-color: white;
     border-radius: 0 0 35px 35px;
+    padding-bottom: 1rem;
+
     &_left {
       @include flex(center, left, column, 0.5rem);
-
       margin-left: 2rem;
-      height: 100%;
+
+      &-title {
+        padding-top: 1rem;
+      }
     }
     &_right {
       margin-right: 2rem;
+      &:hover {
+        .heart1 {
+          display: block;
+        }
+        .heart2 {
+          display: none;
+        }
+      }
     }
   }
 }
+
+// .fa-heart {
+//   font-size: 2rem;
+// }
+
+// .fa-solid {
+//   color: $primary;
+// }
+// .fa-regular {
+//   color: black;
+// }
+// .heart1 {
+//   display: none;
+// }
