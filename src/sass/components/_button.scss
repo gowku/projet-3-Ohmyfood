@@ -10,6 +10,9 @@ button {
   @include size(55%, 3em);
   border-radius: 30px;
   margin-bottom: 2em;
+  &:hover {
+    background-color: lighten($color: $primary, $amount: 10);
+  }
 }
 
 .explorer {

@@ -48,10 +48,12 @@
     &_item {
       background-color: $light-grey;
       @include flex(center, center, row, 2rem);
-
       @include size(90%, 5em);
       border-radius: 30px;
       position: relative;
+      &:hover {
+        background-color: lighten($color: $primary, $amount: 30);
+      }
       svg {
         height: 1.7em;
         color: red;
@@ -143,17 +145,3 @@
     }
   }
 }
-
-// .fa-heart {
-//   font-size: 2rem;
-// }
-
-// .fa-solid {
-//   color: $primary;
-// }
-// .fa-regular {
-//   color: black;
-// }
-// .heart1 {
-//   display: none;
-// }

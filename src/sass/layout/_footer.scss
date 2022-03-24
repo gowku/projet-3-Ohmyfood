@@ -1,15 +1,17 @@
 .logo-footer {
   @include size(8rem, 1.2rem);
   fill: white;
+  margin-left: 1rem;
 }
 footer {
   @include flex(center, left, column, 2rem);
   background-color: $bg-footer;
-  @extend %border;
-  padding: 2rem 0;
+
+  padding: 4rem 0 2rem;
 
   ul {
     @include flex(center, left, column, 0.5rem);
+    margin-left: 1rem;
     li {
       @include flex(0, left, row, 0.5rem);
       color: white;

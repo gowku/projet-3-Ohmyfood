@@ -1,9 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
-.resto-name, footer {
-  border: black solid 1px;
-}
-
 .card_img p, .localisation p, .entree_cards_card_right-span,
 .plats_cards_card_right-span,
 .dessert_cards_card_right-span, nav {
@@ -16,6 +12,7 @@
   width: 8rem;
   height: 1.2rem;
   fill: white;
+  margin-left: 1rem;
 }
 
 footer {
@@ -25,7 +22,7 @@ footer {
   flex-direction: column;
   gap: 2rem;
   background-color: #353535;
-  padding: 2rem 0;
+  padding: 4rem 0 2rem;
 }
 footer ul {
   display: flex;
@@ -33,6 +30,7 @@ footer ul {
   align-items: left;
   flex-direction: column;
   gap: 0.5rem;
+  margin-left: 1rem;
 }
 footer ul li {
   display: flex;
@@ -53,10 +51,6 @@ footer ul li a {
 body {
   max-width: 40rem;
   margin: 0 auto;
-}
-
-.resto-name, footer {
-  border: black solid 1px;
 }
 
 .card_img p, .localisation p, .entree_cards_card_right-span,
@@ -84,10 +78,6 @@ nav a i {
   color: black !important;
 }
 
-.resto-name, footer {
-  border: black solid 1px;
-}
-
 .card_img p, .localisation p, .entree_cards_card_right-span,
 .plats_cards_card_right-span,
 .dessert_cards_card_right-span, nav {
@@ -107,6 +97,9 @@ button {
   height: 3em;
   border-radius: 30px;
   margin-bottom: 2em;
+}
+button:hover {
+  background-color: #ae80e5;
 }
 
 .explorer {
@@ -131,7 +124,7 @@ h6 {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 100;
 }
 
@@ -187,10 +180,6 @@ h3 {
   font-weight: 300;
 }
 
-.resto-name, footer {
-  border: black solid 1px;
-}
-
 .card_img p, .localisation p, .entree_cards_card_right-span,
 .plats_cards_card_right-span,
 .dessert_cards_card_right-span, nav {
@@ -236,6 +225,7 @@ nav a i {
   width: 8rem;
   height: 1.2rem;
   fill: white;
+  margin-left: 1rem;
 }
 
 footer {
@@ -245,7 +235,7 @@ footer {
   flex-direction: column;
   gap: 2rem;
   background-color: #353535;
-  padding: 2rem 0;
+  padding: 4rem 0 2rem;
 }
 footer ul {
   display: flex;
@@ -253,6 +243,7 @@ footer ul {
   align-items: left;
   flex-direction: column;
   gap: 0.5rem;
+  margin-left: 1rem;
 }
 footer ul li {
   display: flex;
@@ -306,29 +297,43 @@ footer ul li a {
 @-webkit-keyframes apparition-menu {
   0% {
     opacity: 0;
-    visibility: hidden;
+    transform: translateY(-400%);
+  }
+  95% {
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    transform: translateY(0%);
   }
 }
 @keyframes apparition-menu {
   0% {
     opacity: 0;
-    visibility: hidden;
+    transform: translateY(-400%);
+  }
+  95% {
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    transform: translateY(0%);
   }
 }
 .header {
   height: 15rem;
 }
 .header img {
-  height: 15rem;
-  width: 100%;
+  height: 17rem;
+  width: 40rem;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+}
+
+main {
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0 0;
+  position: relative;
+  margin-bottom: -2rem;
 }
 
 .resto-name {
@@ -347,10 +352,6 @@ footer ul li a {
   display: none;
 }
 
-main {
-  background-color: #f6f6f6;
-}
-
 .menu {
   display: flex;
   justify-content: space-between;
@@ -359,35 +360,35 @@ main {
   gap: 0;
 }
 
-.entree .carte-1 > *,
-.plats .carte-1 > *,
-.dessert .carte-1 > * {
-  -webkit-animation: apparition-menu 0.6s 0.2 linear;
-          animation: apparition-menu 0.6s 0.2 linear;
+.entree .carte-1,
+.plats .carte-1,
+.dessert .carte-1 {
+  -webkit-animation: apparition-menu 0.6s 0.2 ease;
+          animation: apparition-menu 0.6s 0.2 ease;
 }
-.entree .carte-2 > *,
-.plats .carte-2 > *,
-.dessert .carte-2 > * {
-  -webkit-animation: apparition-menu 0.6s 0.4 linear;
-          animation: apparition-menu 0.6s 0.4 linear;
+.entree .carte-2,
+.plats .carte-2,
+.dessert .carte-2 {
+  -webkit-animation: apparition-menu 0.6s 0.4 ease;
+          animation: apparition-menu 0.6s 0.4 ease;
 }
-.entree .carte-3 > *,
-.plats .carte-3 > *,
-.dessert .carte-3 > * {
-  -webkit-animation: apparition-menu 0.6s 0.6 linear;
-          animation: apparition-menu 0.6s 0.6 linear;
+.entree .carte-3,
+.plats .carte-3,
+.dessert .carte-3 {
+  -webkit-animation: apparition-menu 0.6s 0.6 ease;
+          animation: apparition-menu 0.6s 0.6 ease;
 }
-.entree .carte-4 > *,
-.plats .carte-4 > *,
-.dessert .carte-4 > * {
-  -webkit-animation: apparition-menu 0.6s 0.8 linear;
-          animation: apparition-menu 0.6s 0.8 linear;
+.entree .carte-4,
+.plats .carte-4,
+.dessert .carte-4 {
+  -webkit-animation: apparition-menu 0.6s 0.8 ease;
+          animation: apparition-menu 0.6s 0.8 ease;
 }
 .entree_title,
 .plats_title,
 .dessert_title {
   align-content: left;
-  margin: 2rem 0;
+  margin: 2rem 0 0 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -423,6 +424,7 @@ main {
   height: 6rem;
   background-color: white;
   overflow: hidden;
+  box-shadow: 0px 0px 5px 1px #6e6e6e;
 }
 .entree_cards_card_left,
 .plats_cards_card_left,
@@ -476,7 +478,7 @@ main {
 .entree_cards_card_right-price,
 .plats_cards_card_right-price,
 .dessert_cards_card_right-price {
-  padding-top: 3rem;
+  padding-top: 4rem;
   width: 50%;
   border-radius: 0 25px 25px 0;
 }
@@ -527,10 +529,13 @@ main {
 @keyframes apparition-menu {
   0% {
     opacity: 0;
-    visibility: hidden;
+    transform: translateY(-400%);
+  }
+  95% {
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    transform: translateY(0%);
   }
 }
 .fa-heart {
@@ -553,6 +558,7 @@ main {
   width: 8rem;
   height: 1.2rem;
   fill: white;
+  margin-left: 1rem;
 }
 
 footer {
@@ -562,7 +568,7 @@ footer {
   flex-direction: column;
   gap: 2rem;
   background-color: #353535;
-  padding: 2rem 0;
+  padding: 4rem 0 2rem;
 }
 footer ul {
   display: flex;
@@ -570,6 +576,7 @@ footer ul {
   align-items: left;
   flex-direction: column;
   gap: 0.5rem;
+  margin-left: 1rem;
 }
 footer ul li {
   display: flex;
@@ -649,6 +656,9 @@ footer ul li a {
   height: 5em;
   border-radius: 30px;
   position: relative;
+}
+.fonctionnement_list_item:hover {
+  background-color: #e4d5f6;
 }
 .fonctionnement_list_item svg {
   height: 1.7em;
@@ -793,6 +803,9 @@ button {
   border-radius: 30px;
   margin-bottom: 2em;
 }
+button:hover {
+  background-color: #ae80e5;
+}
 
 .explorer {
   width: 55%;
@@ -816,7 +829,7 @@ h6 {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 100;
 }
 

@@ -19,21 +19,12 @@
 @keyframes apparition-menu {
   0% {
     opacity: 0;
-    visibility: hidden;
+    transform: translateY(-400%);
   }
-  100% {
+  95% {
     opacity: 1;
   }
+  100% {
+    transform: translateY(0%);
+  }
 }
-
-// @for $i from 0 to $i {
-//   .card-#{$i} {
-//     animation: apparition-menu 1s ease-out;
-//     animation-delay: $i * 0.2s;
-//   }
-// }
-// @for $i from 0 to 4 {
-//   .carte-#{$i} {
-//     animation: apparition-menu 1s $i * 0.2 linear;
-//   }
-// }
