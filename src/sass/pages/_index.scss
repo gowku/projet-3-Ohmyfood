@@ -10,7 +10,7 @@ body {
     color: black !important;
   }
   p {
-    @extend %flex;
+    @include flex(center, center, row, 0);
     height: 3em;
     margin-left: 1em;
   }
@@ -106,7 +106,7 @@ body {
     }
     p {
       @include size(6rem, 2rem);
-      @extend %flex;
+      @include flex(center, center, row, 0);
       position: absolute;
       right: 10px;
       top: 10px;

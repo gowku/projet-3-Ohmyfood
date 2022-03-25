@@ -1,7 +1,6 @@
-@import "../utils/placeholder";
 nav {
   height: 4em;
-  @extend %flex;
+  @include flex(center, center, row, 0);
   position: relative;
   box-shadow: 0 -10px black;
 

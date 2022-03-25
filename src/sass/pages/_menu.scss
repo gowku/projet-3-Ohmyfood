@@ -101,7 +101,7 @@ main {
           border-radius: 0 25px 25px 0;
         }
         &-span {
-          @extend %flex;
+          @include flex(center, center, row, 0);
           border-radius: 0 25px 25px 0;
           @include size(50%, 100%);
           background-color: $green;
