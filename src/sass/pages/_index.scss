@@ -1,11 +1,8 @@
-@import "../utils/variables";
-@import "../utils/placeholder";
-@import "../utils/mixin";
-@import "./_menu";
-@import "../utils/keyframes";
-@import "../components/heart";
-@import "../layout/footer";
+body {
+  max-width: 40rem;
 
+  margin: 0 auto;
+}
 .localisation {
   @include flex(center, center, row, 0);
   background-color: $dark-grey;
@@ -56,7 +53,6 @@
       }
       svg {
         height: 1.7em;
-        color: red;
       }
 
       @for $i from 1 to 4 {

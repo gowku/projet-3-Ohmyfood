@@ -1,6 +1,3 @@
-@import "../utils/variables";
-@import "../utils/mixin";
-
 button {
   @include font(0.9rem, 600);
   background-color: $primary;

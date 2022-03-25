@@ -1,7 +1,13 @@
+@import "./utils/variables";
+@import "./utils/placeholder";
 @import "./utils/mixin";
-@import "./pages/home";
-@import "./layout/nav";
-@import "./pages/index";
+@import "./utils/keyframes";
 @import "./base/reset";
 @import "./base/fonts";
 @import "./base/typography";
+@import "./pages/menu";
+@import "./pages/index";
+@import "./layout/nav";
+@import "./layout/footer";
+@import "./components/heart";
+@import "./components/button";
