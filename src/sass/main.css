@@ -208,10 +208,12 @@ main {
   border-radius: 35px 35px 0 0;
 }
 .resto-name-hearts:hover .heart1 {
-  display: contents;
+  opacity: 1;
+  transition-duration: 0.5s;
 }
 .resto-name-hearts:hover .heart2 {
-  display: none;
+  opacity: 0;
+  transition-duration: 0.2s;
 }
 
 .menu {
@@ -576,12 +578,15 @@ body {
 }
 .card_body_right {
   margin-right: 2rem;
+  position: relative;
 }
 .card_body_right:hover .heart1 {
-  display: block;
+  opacity: 1;
+  transition-duration: 0.5s;
 }
 .card_body_right:hover .heart2 {
-  display: none;
+  transition-duration: 0.5s;
+  opacity: 0;
 }
 
 nav {
@@ -659,7 +664,15 @@ footer ul li a {
 }
 
 .heart1 {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  right: 1rem;
+}
+
+.heart2 {
+  position: absolute;
+  opacity: 1;
+  right: 1rem;
 }
 
 button {
