@@ -9,6 +9,7 @@ button {
   margin-bottom: 2em;
   &:hover {
     background-color: lighten($color: $primary, $amount: 10);
+    box-shadow: 0px 0px 5px 3px #6e6e6e;
   }
 }
 
