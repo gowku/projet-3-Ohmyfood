@@ -390,12 +390,11 @@ body {
   right: 1rem;
   z-index: 1;
 }
-
-#toggle-1 {
+#body-index #toggle-1 {
   position: absolute;
   display: none;
 }
-#toggle-1 input {
+#body-index #toggle-1 input {
   width: 0.5rem;
   height: 0.5rem;
   right: 1rem;
@@ -403,20 +402,17 @@ body {
      -moz-appearance: none;
           appearance: none;
 }
-
-#toggle-1:checked ~ .heart1 {
+#body-index #toggle-1:checked ~ .heart1 {
   opacity: 1;
 }
-
-#toggle-1:checked ~ .heart2 {
+#body-index #toggle-1:checked ~ .heart2 {
   opacity: 0;
 }
-
-#toggle-2 {
+#body-index #toggle-2 {
   position: absolute;
   display: none;
 }
-#toggle-2 input {
+#body-index #toggle-2 input {
   width: 0.5rem;
   height: 0.5rem;
   right: 1rem;
@@ -424,20 +420,17 @@ body {
      -moz-appearance: none;
           appearance: none;
 }
-
-#toggle-2:checked ~ .heart1 {
+#body-index #toggle-2:checked ~ .heart1 {
   opacity: 1;
 }
-
-#toggle-2:checked ~ .heart2 {
+#body-index #toggle-2:checked ~ .heart2 {
   opacity: 0;
 }
-
-#toggle-3 {
+#body-index #toggle-3 {
   position: absolute;
   display: none;
 }
-#toggle-3 input {
+#body-index #toggle-3 input {
   width: 0.5rem;
   height: 0.5rem;
   right: 1rem;
@@ -445,20 +438,17 @@ body {
      -moz-appearance: none;
           appearance: none;
 }
-
-#toggle-3:checked ~ .heart1 {
+#body-index #toggle-3:checked ~ .heart1 {
   opacity: 1;
 }
-
-#toggle-3:checked ~ .heart2 {
+#body-index #toggle-3:checked ~ .heart2 {
   opacity: 0;
 }
-
-#toggle-4 {
+#body-index #toggle-4 {
   position: absolute;
   display: none;
 }
-#toggle-4 input {
+#body-index #toggle-4 input {
   width: 0.5rem;
   height: 0.5rem;
   right: 1rem;
@@ -466,12 +456,10 @@ body {
      -moz-appearance: none;
           appearance: none;
 }
-
-#toggle-4:checked ~ .heart1 {
+#body-index #toggle-4:checked ~ .heart1 {
   opacity: 1;
 }
-
-#toggle-4:checked ~ .heart2 {
+#body-index #toggle-4:checked ~ .heart2 {
   opacity: 0;
 }
 
@@ -576,6 +564,7 @@ main {
   background-color: white;
   overflow: hidden;
   box-shadow: 0px 0px 5px 1px #6e6e6e;
+  position: relative;
 }
 .entree_cards_card_left,
 .plats_cards_card_left,
@@ -613,18 +602,6 @@ main {
   width: 10rem;
   height: 100%;
   margin-right: -5rem;
-}
-.entree_cards_card_right:hover,
-.plats_cards_card_right:hover,
-.dessert_cards_card_right:hover {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.entree_cards_card_right:hover span i,
-.plats_cards_card_right:hover span i,
-.dessert_cards_card_right:hover span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
 }
 .entree_cards_card_right-price,
 .plats_cards_card_right-price,
@@ -697,6 +674,417 @@ main {
   opacity: 0;
 }
 
+.entree_cards_card label,
+.plats_cards_card label,
+.dessert_cards_card label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  top: 0;
+  z-index: 1;
+}
+.entree_cards_card #toggle-card-1,
+.plats_cards_card #toggle-card-1,
+.dessert_cards_card #toggle-card-1 {
+  position: absolute;
+  display: none;
+}
+.entree_cards_card #toggle-card-1 input,
+.plats_cards_card #toggle-card-1 input,
+.dessert_cards_card #toggle-card-1 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.entree_cards_card #toggle-card-1:checked ~ .entree_cards_card_right,
+.entree_cards_card #toggle-card-1:checked ~ .plats_cards_card_right,
+.entree_cards_card #toggle-card-1:checked ~ .dessert_cards_card_right,
+.plats_cards_card #toggle-card-1:checked ~ .entree_cards_card_right,
+.plats_cards_card #toggle-card-1:checked ~ .plats_cards_card_right,
+.plats_cards_card #toggle-card-1:checked ~ .dessert_cards_card_right,
+.dessert_cards_card #toggle-card-1:checked ~ .entree_cards_card_right,
+.dessert_cards_card #toggle-card-1:checked ~ .plats_cards_card_right,
+.dessert_cards_card #toggle-card-1:checked ~ .dessert_cards_card_right {
+  margin-right: 0;
+  transition: 0.5s ease;
+}
+.entree_cards_card #toggle-card-1:checked ~ .entree_cards_card_right span i,
+.entree_cards_card #toggle-card-1:checked ~ .plats_cards_card_right span i,
+.entree_cards_card #toggle-card-1:checked ~ .dessert_cards_card_right span i,
+.plats_cards_card #toggle-card-1:checked ~ .entree_cards_card_right span i,
+.plats_cards_card #toggle-card-1:checked ~ .plats_cards_card_right span i,
+.plats_cards_card #toggle-card-1:checked ~ .dessert_cards_card_right span i,
+.dessert_cards_card #toggle-card-1:checked ~ .entree_cards_card_right span i,
+.dessert_cards_card #toggle-card-1:checked ~ .plats_cards_card_right span i,
+.dessert_cards_card #toggle-card-1:checked ~ .dessert_cards_card_right span i {
+  -webkit-animation: check-spinner 1s ease-in-out;
+          animation: check-spinner 1s ease-in-out;
+}
+.entree_cards_card #toggle-card-2,
+.plats_cards_card #toggle-card-2,
+.dessert_cards_card #toggle-card-2 {
+  position: absolute;
+  display: none;
+}
+.entree_cards_card #toggle-card-2 input,
+.plats_cards_card #toggle-card-2 input,
+.dessert_cards_card #toggle-card-2 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.entree_cards_card #toggle-card-2:checked ~ .entree_cards_card_right,
+.entree_cards_card #toggle-card-2:checked ~ .plats_cards_card_right,
+.entree_cards_card #toggle-card-2:checked ~ .dessert_cards_card_right,
+.plats_cards_card #toggle-card-2:checked ~ .entree_cards_card_right,
+.plats_cards_card #toggle-card-2:checked ~ .plats_cards_card_right,
+.plats_cards_card #toggle-card-2:checked ~ .dessert_cards_card_right,
+.dessert_cards_card #toggle-card-2:checked ~ .entree_cards_card_right,
+.dessert_cards_card #toggle-card-2:checked ~ .plats_cards_card_right,
+.dessert_cards_card #toggle-card-2:checked ~ .dessert_cards_card_right {
+  margin-right: 0;
+  transition: 0.5s ease;
+}
+.entree_cards_card #toggle-card-2:checked ~ .entree_cards_card_right span i,
+.entree_cards_card #toggle-card-2:checked ~ .plats_cards_card_right span i,
+.entree_cards_card #toggle-card-2:checked ~ .dessert_cards_card_right span i,
+.plats_cards_card #toggle-card-2:checked ~ .entree_cards_card_right span i,
+.plats_cards_card #toggle-card-2:checked ~ .plats_cards_card_right span i,
+.plats_cards_card #toggle-card-2:checked ~ .dessert_cards_card_right span i,
+.dessert_cards_card #toggle-card-2:checked ~ .entree_cards_card_right span i,
+.dessert_cards_card #toggle-card-2:checked ~ .plats_cards_card_right span i,
+.dessert_cards_card #toggle-card-2:checked ~ .dessert_cards_card_right span i {
+  -webkit-animation: check-spinner 1s ease-in-out;
+          animation: check-spinner 1s ease-in-out;
+}
+.entree_cards_card #toggle-card-3,
+.plats_cards_card #toggle-card-3,
+.dessert_cards_card #toggle-card-3 {
+  position: absolute;
+  display: none;
+}
+.entree_cards_card #toggle-card-3 input,
+.plats_cards_card #toggle-card-3 input,
+.dessert_cards_card #toggle-card-3 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.entree_cards_card #toggle-card-3:checked ~ .entree_cards_card_right,
+.entree_cards_card #toggle-card-3:checked ~ .plats_cards_card_right,
+.entree_cards_card #toggle-card-3:checked ~ .dessert_cards_card_right,
+.plats_cards_card #toggle-card-3:checked ~ .entree_cards_card_right,
+.plats_cards_card #toggle-card-3:checked ~ .plats_cards_card_right,
+.plats_cards_card #toggle-card-3:checked ~ .dessert_cards_card_right,
+.dessert_cards_card #toggle-card-3:checked ~ .entree_cards_card_right,
+.dessert_cards_card #toggle-card-3:checked ~ .plats_cards_card_right,
+.dessert_cards_card #toggle-card-3:checked ~ .dessert_cards_card_right {
+  margin-right: 0;
+  transition: 0.5s ease;
+}
+.entree_cards_card #toggle-card-3:checked ~ .entree_cards_card_right span i,
+.entree_cards_card #toggle-card-3:checked ~ .plats_cards_card_right span i,
+.entree_cards_card #toggle-card-3:checked ~ .dessert_cards_card_right span i,
+.plats_cards_card #toggle-card-3:checked ~ .entree_cards_card_right span i,
+.plats_cards_card #toggle-card-3:checked ~ .plats_cards_card_right span i,
+.plats_cards_card #toggle-card-3:checked ~ .dessert_cards_card_right span i,
+.dessert_cards_card #toggle-card-3:checked ~ .entree_cards_card_right span i,
+.dessert_cards_card #toggle-card-3:checked ~ .plats_cards_card_right span i,
+.dessert_cards_card #toggle-card-3:checked ~ .dessert_cards_card_right span i {
+  -webkit-animation: check-spinner 1s ease-in-out;
+          animation: check-spinner 1s ease-in-out;
+}
+.entree_cards_card #toggle-card-4,
+.plats_cards_card #toggle-card-4,
+.dessert_cards_card #toggle-card-4 {
+  position: absolute;
+  display: none;
+}
+.entree_cards_card #toggle-card-4 input,
+.plats_cards_card #toggle-card-4 input,
+.dessert_cards_card #toggle-card-4 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.entree_cards_card #toggle-card-4:checked ~ .entree_cards_card_right,
+.entree_cards_card #toggle-card-4:checked ~ .plats_cards_card_right,
+.entree_cards_card #toggle-card-4:checked ~ .dessert_cards_card_right,
+.plats_cards_card #toggle-card-4:checked ~ .entree_cards_card_right,
+.plats_cards_card #toggle-card-4:checked ~ .plats_cards_card_right,
+.plats_cards_card #toggle-card-4:checked ~ .dessert_cards_card_right,
+.dessert_cards_card #toggle-card-4:checked ~ .entree_cards_card_right,
+.dessert_cards_card #toggle-card-4:checked ~ .plats_cards_card_right,
+.dessert_cards_card #toggle-card-4:checked ~ .dessert_cards_card_right {
+  margin-right: 0;
+  transition: 0.5s ease;
+}
+.entree_cards_card #toggle-card-4:checked ~ .entree_cards_card_right span i,
+.entree_cards_card #toggle-card-4:checked ~ .plats_cards_card_right span i,
+.entree_cards_card #toggle-card-4:checked ~ .dessert_cards_card_right span i,
+.plats_cards_card #toggle-card-4:checked ~ .entree_cards_card_right span i,
+.plats_cards_card #toggle-card-4:checked ~ .plats_cards_card_right span i,
+.plats_cards_card #toggle-card-4:checked ~ .dessert_cards_card_right span i,
+.dessert_cards_card #toggle-card-4:checked ~ .entree_cards_card_right span i,
+.dessert_cards_card #toggle-card-4:checked ~ .plats_cards_card_right span i,
+.dessert_cards_card #toggle-card-4:checked ~ .dessert_cards_card_right span i {
+  -webkit-animation: check-spinner 1s ease-in-out;
+          animation: check-spinner 1s ease-in-out;
+}
+.entree_cards_card #toggle-card-5,
+.plats_cards_card #toggle-card-5,
+.dessert_cards_card #toggle-card-5 {
+  position: absolute;
+  display: none;
+}
+.entree_cards_card #toggle-card-5 input,
+.plats_cards_card #toggle-card-5 input,
+.dessert_cards_card #toggle-card-5 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.entree_cards_card #toggle-card-5:checked ~ .entree_cards_card_right,
+.entree_cards_card #toggle-card-5:checked ~ .plats_cards_card_right,
+.entree_cards_card #toggle-card-5:checked ~ .dessert_cards_card_right,
+.plats_cards_card #toggle-card-5:checked ~ .entree_cards_card_right,
+.plats_cards_card #toggle-card-5:checked ~ .plats_cards_card_right,
+.plats_cards_card #toggle-card-5:checked ~ .dessert_cards_card_right,
+.dessert_cards_card #toggle-card-5:checked ~ .entree_cards_card_right,
+.dessert_cards_card #toggle-card-5:checked ~ .plats_cards_card_right,
+.dessert_cards_card #toggle-card-5:checked ~ .dessert_cards_card_right {
+  margin-right: 0;
+  transition: 0.5s ease;
+}
+.entree_cards_card #toggle-card-5:checked ~ .entree_cards_card_right span i,
+.entree_cards_card #toggle-card-5:checked ~ .plats_cards_card_right span i,
+.entree_cards_card #toggle-card-5:checked ~ .dessert_cards_card_right span i,
+.plats_cards_card #toggle-card-5:checked ~ .entree_cards_card_right span i,
+.plats_cards_card #toggle-card-5:checked ~ .plats_cards_card_right span i,
+.plats_cards_card #toggle-card-5:checked ~ .dessert_cards_card_right span i,
+.dessert_cards_card #toggle-card-5:checked ~ .entree_cards_card_right span i,
+.dessert_cards_card #toggle-card-5:checked ~ .plats_cards_card_right span i,
+.dessert_cards_card #toggle-card-5:checked ~ .dessert_cards_card_right span i {
+  -webkit-animation: check-spinner 1s ease-in-out;
+          animation: check-spinner 1s ease-in-out;
+}
+.entree_cards_card #toggle-card-6,
+.plats_cards_card #toggle-card-6,
+.dessert_cards_card #toggle-card-6 {
+  position: absolute;
+  display: none;
+}
+.entree_cards_card #toggle-card-6 input,
+.plats_cards_card #toggle-card-6 input,
+.dessert_cards_card #toggle-card-6 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.entree_cards_card #toggle-card-6:checked ~ .entree_cards_card_right,
+.entree_cards_card #toggle-card-6:checked ~ .plats_cards_card_right,
+.entree_cards_card #toggle-card-6:checked ~ .dessert_cards_card_right,
+.plats_cards_card #toggle-card-6:checked ~ .entree_cards_card_right,
+.plats_cards_card #toggle-card-6:checked ~ .plats_cards_card_right,
+.plats_cards_card #toggle-card-6:checked ~ .dessert_cards_card_right,
+.dessert_cards_card #toggle-card-6:checked ~ .entree_cards_card_right,
+.dessert_cards_card #toggle-card-6:checked ~ .plats_cards_card_right,
+.dessert_cards_card #toggle-card-6:checked ~ .dessert_cards_card_right {
+  margin-right: 0;
+  transition: 0.5s ease;
+}
+.entree_cards_card #toggle-card-6:checked ~ .entree_cards_card_right span i,
+.entree_cards_card #toggle-card-6:checked ~ .plats_cards_card_right span i,
+.entree_cards_card #toggle-card-6:checked ~ .dessert_cards_card_right span i,
+.plats_cards_card #toggle-card-6:checked ~ .entree_cards_card_right span i,
+.plats_cards_card #toggle-card-6:checked ~ .plats_cards_card_right span i,
+.plats_cards_card #toggle-card-6:checked ~ .dessert_cards_card_right span i,
+.dessert_cards_card #toggle-card-6:checked ~ .entree_cards_card_right span i,
+.dessert_cards_card #toggle-card-6:checked ~ .plats_cards_card_right span i,
+.dessert_cards_card #toggle-card-6:checked ~ .dessert_cards_card_right span i {
+  -webkit-animation: check-spinner 1s ease-in-out;
+          animation: check-spinner 1s ease-in-out;
+}
+.entree_cards_card #toggle-card-7,
+.plats_cards_card #toggle-card-7,
+.dessert_cards_card #toggle-card-7 {
+  position: absolute;
+  display: none;
+}
+.entree_cards_card #toggle-card-7 input,
+.plats_cards_card #toggle-card-7 input,
+.dessert_cards_card #toggle-card-7 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.entree_cards_card #toggle-card-7:checked ~ .entree_cards_card_right,
+.entree_cards_card #toggle-card-7:checked ~ .plats_cards_card_right,
+.entree_cards_card #toggle-card-7:checked ~ .dessert_cards_card_right,
+.plats_cards_card #toggle-card-7:checked ~ .entree_cards_card_right,
+.plats_cards_card #toggle-card-7:checked ~ .plats_cards_card_right,
+.plats_cards_card #toggle-card-7:checked ~ .dessert_cards_card_right,
+.dessert_cards_card #toggle-card-7:checked ~ .entree_cards_card_right,
+.dessert_cards_card #toggle-card-7:checked ~ .plats_cards_card_right,
+.dessert_cards_card #toggle-card-7:checked ~ .dessert_cards_card_right {
+  margin-right: 0;
+  transition: 0.5s ease;
+}
+.entree_cards_card #toggle-card-7:checked ~ .entree_cards_card_right span i,
+.entree_cards_card #toggle-card-7:checked ~ .plats_cards_card_right span i,
+.entree_cards_card #toggle-card-7:checked ~ .dessert_cards_card_right span i,
+.plats_cards_card #toggle-card-7:checked ~ .entree_cards_card_right span i,
+.plats_cards_card #toggle-card-7:checked ~ .plats_cards_card_right span i,
+.plats_cards_card #toggle-card-7:checked ~ .dessert_cards_card_right span i,
+.dessert_cards_card #toggle-card-7:checked ~ .entree_cards_card_right span i,
+.dessert_cards_card #toggle-card-7:checked ~ .plats_cards_card_right span i,
+.dessert_cards_card #toggle-card-7:checked ~ .dessert_cards_card_right span i {
+  -webkit-animation: check-spinner 1s ease-in-out;
+          animation: check-spinner 1s ease-in-out;
+}
+.entree_cards_card #toggle-card-8,
+.plats_cards_card #toggle-card-8,
+.dessert_cards_card #toggle-card-8 {
+  position: absolute;
+  display: none;
+}
+.entree_cards_card #toggle-card-8 input,
+.plats_cards_card #toggle-card-8 input,
+.dessert_cards_card #toggle-card-8 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.entree_cards_card #toggle-card-8:checked ~ .entree_cards_card_right,
+.entree_cards_card #toggle-card-8:checked ~ .plats_cards_card_right,
+.entree_cards_card #toggle-card-8:checked ~ .dessert_cards_card_right,
+.plats_cards_card #toggle-card-8:checked ~ .entree_cards_card_right,
+.plats_cards_card #toggle-card-8:checked ~ .plats_cards_card_right,
+.plats_cards_card #toggle-card-8:checked ~ .dessert_cards_card_right,
+.dessert_cards_card #toggle-card-8:checked ~ .entree_cards_card_right,
+.dessert_cards_card #toggle-card-8:checked ~ .plats_cards_card_right,
+.dessert_cards_card #toggle-card-8:checked ~ .dessert_cards_card_right {
+  margin-right: 0;
+  transition: 0.5s ease;
+}
+.entree_cards_card #toggle-card-8:checked ~ .entree_cards_card_right span i,
+.entree_cards_card #toggle-card-8:checked ~ .plats_cards_card_right span i,
+.entree_cards_card #toggle-card-8:checked ~ .dessert_cards_card_right span i,
+.plats_cards_card #toggle-card-8:checked ~ .entree_cards_card_right span i,
+.plats_cards_card #toggle-card-8:checked ~ .plats_cards_card_right span i,
+.plats_cards_card #toggle-card-8:checked ~ .dessert_cards_card_right span i,
+.dessert_cards_card #toggle-card-8:checked ~ .entree_cards_card_right span i,
+.dessert_cards_card #toggle-card-8:checked ~ .plats_cards_card_right span i,
+.dessert_cards_card #toggle-card-8:checked ~ .dessert_cards_card_right span i {
+  -webkit-animation: check-spinner 1s ease-in-out;
+          animation: check-spinner 1s ease-in-out;
+}
+.entree_cards_card #toggle-card-9,
+.plats_cards_card #toggle-card-9,
+.dessert_cards_card #toggle-card-9 {
+  position: absolute;
+  display: none;
+}
+.entree_cards_card #toggle-card-9 input,
+.plats_cards_card #toggle-card-9 input,
+.dessert_cards_card #toggle-card-9 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.entree_cards_card #toggle-card-9:checked ~ .entree_cards_card_right,
+.entree_cards_card #toggle-card-9:checked ~ .plats_cards_card_right,
+.entree_cards_card #toggle-card-9:checked ~ .dessert_cards_card_right,
+.plats_cards_card #toggle-card-9:checked ~ .entree_cards_card_right,
+.plats_cards_card #toggle-card-9:checked ~ .plats_cards_card_right,
+.plats_cards_card #toggle-card-9:checked ~ .dessert_cards_card_right,
+.dessert_cards_card #toggle-card-9:checked ~ .entree_cards_card_right,
+.dessert_cards_card #toggle-card-9:checked ~ .plats_cards_card_right,
+.dessert_cards_card #toggle-card-9:checked ~ .dessert_cards_card_right {
+  margin-right: 0;
+  transition: 0.5s ease;
+}
+.entree_cards_card #toggle-card-9:checked ~ .entree_cards_card_right span i,
+.entree_cards_card #toggle-card-9:checked ~ .plats_cards_card_right span i,
+.entree_cards_card #toggle-card-9:checked ~ .dessert_cards_card_right span i,
+.plats_cards_card #toggle-card-9:checked ~ .entree_cards_card_right span i,
+.plats_cards_card #toggle-card-9:checked ~ .plats_cards_card_right span i,
+.plats_cards_card #toggle-card-9:checked ~ .dessert_cards_card_right span i,
+.dessert_cards_card #toggle-card-9:checked ~ .entree_cards_card_right span i,
+.dessert_cards_card #toggle-card-9:checked ~ .plats_cards_card_right span i,
+.dessert_cards_card #toggle-card-9:checked ~ .dessert_cards_card_right span i {
+  -webkit-animation: check-spinner 1s ease-in-out;
+          animation: check-spinner 1s ease-in-out;
+}
+.entree_cards_card #toggle-card-10,
+.plats_cards_card #toggle-card-10,
+.dessert_cards_card #toggle-card-10 {
+  position: absolute;
+  display: none;
+}
+.entree_cards_card #toggle-card-10 input,
+.plats_cards_card #toggle-card-10 input,
+.dessert_cards_card #toggle-card-10 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.entree_cards_card #toggle-card-10:checked ~ .entree_cards_card_right,
+.entree_cards_card #toggle-card-10:checked ~ .plats_cards_card_right,
+.entree_cards_card #toggle-card-10:checked ~ .dessert_cards_card_right,
+.plats_cards_card #toggle-card-10:checked ~ .entree_cards_card_right,
+.plats_cards_card #toggle-card-10:checked ~ .plats_cards_card_right,
+.plats_cards_card #toggle-card-10:checked ~ .dessert_cards_card_right,
+.dessert_cards_card #toggle-card-10:checked ~ .entree_cards_card_right,
+.dessert_cards_card #toggle-card-10:checked ~ .plats_cards_card_right,
+.dessert_cards_card #toggle-card-10:checked ~ .dessert_cards_card_right {
+  margin-right: 0;
+  transition: 0.5s ease;
+}
+.entree_cards_card #toggle-card-10:checked ~ .entree_cards_card_right span i,
+.entree_cards_card #toggle-card-10:checked ~ .plats_cards_card_right span i,
+.entree_cards_card #toggle-card-10:checked ~ .dessert_cards_card_right span i,
+.plats_cards_card #toggle-card-10:checked ~ .entree_cards_card_right span i,
+.plats_cards_card #toggle-card-10:checked ~ .plats_cards_card_right span i,
+.plats_cards_card #toggle-card-10:checked ~ .dessert_cards_card_right span i,
+.dessert_cards_card #toggle-card-10:checked ~ .entree_cards_card_right span i,
+.dessert_cards_card #toggle-card-10:checked ~ .plats_cards_card_right span i,
+.dessert_cards_card #toggle-card-10:checked ~ .dessert_cards_card_right span i {
+  -webkit-animation: check-spinner 1s ease-in-out;
+          animation: check-spinner 1s ease-in-out;
+}
+
 nav {
   height: 4em;
   display: flex;
@@ -717,6 +1105,29 @@ nav a {
 }
 nav a i {
   color: black !important;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  background-color: white;
+  -webkit-animation: opacity 0.1s 2.9s linear both;
+          animation: opacity 0.1s 2.9s linear both;
+}
+.loading-spinner {
+  width: 8rem;
+  height: 8rem;
+  border: 8px solid #9356dc;
+  border-top-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner 2.9s ease-in-out forwards;
+          animation: spinner 2.9s ease-in-out forwards;
 }
 
 .logo-footer {
@@ -821,27 +1232,4 @@ button:hover {
   height: 3em;
   border-radius: 30px;
   margin-bottom: 2em;
-}
-
-.loading {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
-  background-color: white;
-  -webkit-animation: opacity 0.1s 2.9s linear both;
-          animation: opacity 0.1s 2.9s linear both;
-}
-.loading-spinner {
-  width: 8rem;
-  height: 8rem;
-  border: 8px solid #9356dc;
-  border-top-color: transparent;
-  border-radius: 50%;
-  -webkit-animation: spinner 0.2s ease-in-out forwards;
-          animation: spinner 0.2s ease-in-out forwards;
 }/*# sourceMappingURL=main.css.map */

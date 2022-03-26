@@ -167,22 +167,21 @@ body {
     right: 1rem;
     z-index: 1;
   }
-}
-
-@for $i from 1 to 5 {
-  #toggle-#{$i} {
-    position: absolute;
-    display: none;
-    input {
-      @include size(0.5rem, 0.5rem);
-      right: 1rem;
-      appearance: none;
+  @for $i from 1 to 5 {
+    #toggle-#{$i} {
+      position: absolute;
+      display: none;
+      input {
+        @include size(0.5rem, 0.5rem);
+        right: 1rem;
+        appearance: none;
+      }
     }
-  }
-  #toggle-#{$i}:checked ~ .heart1 {
-    opacity: 1;
-  }
-  #toggle-#{$i}:checked ~ .heart2 {
-    opacity: 0;
+    #toggle-#{$i}:checked ~ .heart1 {
+      opacity: 1;
+    }
+    #toggle-#{$i}:checked ~ .heart2 {
+      opacity: 0;
+    }
   }
 }
