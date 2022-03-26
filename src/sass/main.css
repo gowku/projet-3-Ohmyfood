@@ -580,13 +580,35 @@ body {
   margin-right: 2rem;
   position: relative;
 }
-.card_body_right:hover .heart1 {
-  opacity: 1;
-  transition-duration: 0.5s;
+
+#toggle {
+  position: absolute;
+  display: none;
 }
-.card_body_right:hover .heart2 {
-  transition-duration: 0.5s;
+#toggle input {
+  width: 0.5rem;
+  height: 0.5rem;
+  right: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+#toggle:checked ~ .heart1 {
+  opacity: 1;
+}
+
+#toggle:checked ~ .heart2 {
   opacity: 0;
+}
+
+label {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  opacity: 1;
+  right: 1rem;
+  z-index: 1;
 }
 
 nav {
@@ -667,12 +689,14 @@ footer ul li a {
   position: absolute;
   opacity: 0;
   right: 1rem;
+  top: 0;
 }
 
 .heart2 {
   position: absolute;
   opacity: 1;
   right: 1rem;
+  top: 0;
 }
 
 button {
@@ -718,6 +742,6 @@ button:hover {
   border: 8px solid #9356dc;
   border-top-color: transparent;
   border-radius: 50%;
-  -webkit-animation: spinner 3s ease-in-out forwards;
-          animation: spinner 3s ease-in-out forwards;
+  -webkit-animation: spinner 0.2s ease-in-out forwards;
+          animation: spinner 0.2s ease-in-out forwards;
 }/*# sourceMappingURL=main.css.map */
