@@ -180,205 +180,6 @@ h3 {
   font-weight: 300;
 }
 
-.header {
-  height: 15rem;
-}
-.header img {
-  height: 17rem;
-  width: 40rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-}
-
-main {
-  background-color: #f6f6f6;
-  border-radius: 35px 35px 0 0;
-  position: relative;
-  margin-bottom: -2rem;
-}
-
-.resto-name {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
-  padding-top: 3rem;
-  border-radius: 35px 35px 0 0;
-}
-.resto-name-hearts:hover .heart1 {
-  opacity: 1;
-  transition-duration: 0.5s;
-}
-.resto-name-hearts:hover .heart2 {
-  opacity: 0;
-  transition-duration: 0.2s;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: left;
-  flex-direction: column;
-  gap: 0;
-}
-
-.entree .carte-1,
-.plats .carte-1,
-.dessert .carte-1 {
-  -webkit-animation: apparition-menu 0.6s 0.2 ease;
-          animation: apparition-menu 0.6s 0.2 ease;
-}
-.entree .carte-2,
-.plats .carte-2,
-.dessert .carte-2 {
-  -webkit-animation: apparition-menu 0.6s 0.4 ease;
-          animation: apparition-menu 0.6s 0.4 ease;
-}
-.entree .carte-3,
-.plats .carte-3,
-.dessert .carte-3 {
-  -webkit-animation: apparition-menu 0.6s 0.6 ease;
-          animation: apparition-menu 0.6s 0.6 ease;
-}
-.entree .carte-4,
-.plats .carte-4,
-.dessert .carte-4 {
-  -webkit-animation: apparition-menu 0.6s 0.8 ease;
-          animation: apparition-menu 0.6s 0.8 ease;
-}
-.entree_title,
-.plats_title,
-.dessert_title {
-  align-content: left;
-  margin: 2rem 0 0 2rem;
-  display: flex;
-  flex-direction: column;
-}
-.entree_title::after,
-.plats_title::after,
-.dessert_title::after {
-  content: "";
-  width: 3.5rem;
-  height: 4px;
-  background-color: #99e2d0;
-}
-.entree_cards,
-.plats_cards,
-.dessert_cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  height: auto;
-  padding: 1rem 0;
-}
-.entree_cards_card,
-.plats_cards_card,
-.dessert_cards_card {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-direction: row;
-  gap: 0;
-  border-radius: 25px;
-  width: 95%;
-  height: 6rem;
-  background-color: white;
-  overflow: hidden;
-  box-shadow: 0px 0px 5px 1px #6e6e6e;
-}
-.entree_cards_card_left,
-.plats_cards_card_left,
-.dessert_cards_card_left {
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  flex-direction: column;
-  gap: 0.5rem;
-  height: 100%;
-  margin-left: 1em;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.entree_cards_card_left-title,
-.plats_cards_card_left-title,
-.dessert_cards_card_left-title {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin-top: 1rem;
-}
-.entree_cards_card_left-description,
-.plats_cards_card_left-description,
-.dessert_cards_card_left-description {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.entree_cards_card_right,
-.plats_cards_card_right,
-.dessert_cards_card_right {
-  display: flex;
-  width: 10rem;
-  height: 100%;
-  margin-right: -5rem;
-}
-.entree_cards_card_right:hover,
-.plats_cards_card_right:hover,
-.dessert_cards_card_right:hover {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.entree_cards_card_right:hover span i,
-.plats_cards_card_right:hover span i,
-.dessert_cards_card_right:hover span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.entree_cards_card_right-price,
-.plats_cards_card_right-price,
-.dessert_cards_card_right-price {
-  padding-top: 4rem;
-  width: 50%;
-  border-radius: 0 25px 25px 0;
-}
-.entree_cards_card_right-span,
-.plats_cards_card_right-span,
-.dessert_cards_card_right-span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
-  border-radius: 0 25px 25px 0;
-  width: 50%;
-  height: 100%;
-  background-color: #99e2d0;
-}
-.entree_cards_card_right-span i,
-.plats_cards_card_right-span i,
-.dessert_cards_card_right-span i {
-  font-size: 1.8rem;
-  color: white;
-}
-
-.carte::before {
-  content: "";
-}
-
-.commander {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
-  margin: 2rem 0;
-}
-
 body {
   max-width: 40rem;
   margin: 0 auto;
@@ -581,11 +382,20 @@ body {
   position: relative;
 }
 
-#toggle {
+#body-index label {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  opacity: 1;
+  right: 1rem;
+  z-index: 1;
+}
+
+#toggle-1 {
   position: absolute;
   display: none;
 }
-#toggle input {
+#toggle-1 input {
   width: 0.5rem;
   height: 0.5rem;
   right: 1rem;
@@ -594,21 +404,297 @@ body {
           appearance: none;
 }
 
-#toggle:checked ~ .heart1 {
+#toggle-1:checked ~ .heart1 {
   opacity: 1;
 }
 
-#toggle:checked ~ .heart2 {
+#toggle-1:checked ~ .heart2 {
   opacity: 0;
 }
 
-label {
+#toggle-2 {
+  position: absolute;
+  display: none;
+}
+#toggle-2 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  right: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+#toggle-2:checked ~ .heart1 {
+  opacity: 1;
+}
+
+#toggle-2:checked ~ .heart2 {
+  opacity: 0;
+}
+
+#toggle-3 {
+  position: absolute;
+  display: none;
+}
+#toggle-3 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  right: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+#toggle-3:checked ~ .heart1 {
+  opacity: 1;
+}
+
+#toggle-3:checked ~ .heart2 {
+  opacity: 0;
+}
+
+#toggle-4 {
+  position: absolute;
+  display: none;
+}
+#toggle-4 input {
+  width: 0.5rem;
+  height: 0.5rem;
+  right: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+#toggle-4:checked ~ .heart1 {
+  opacity: 1;
+}
+
+#toggle-4:checked ~ .heart2 {
+  opacity: 0;
+}
+
+.header {
+  height: 15rem;
+}
+.header img {
+  height: 17rem;
+  width: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+main {
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0 0;
+  position: relative;
+  margin-bottom: -2rem;
+}
+
+.resto-name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  padding-top: 3rem;
+  border-radius: 35px 35px 0 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  flex-direction: column;
+  gap: 0;
+}
+
+.entree .carte-1,
+.plats .carte-1,
+.dessert .carte-1 {
+  -webkit-animation: apparition-menu 0.6s 0.2 ease;
+          animation: apparition-menu 0.6s 0.2 ease;
+}
+.entree .carte-2,
+.plats .carte-2,
+.dessert .carte-2 {
+  -webkit-animation: apparition-menu 0.6s 0.4 ease;
+          animation: apparition-menu 0.6s 0.4 ease;
+}
+.entree .carte-3,
+.plats .carte-3,
+.dessert .carte-3 {
+  -webkit-animation: apparition-menu 0.6s 0.6 ease;
+          animation: apparition-menu 0.6s 0.6 ease;
+}
+.entree .carte-4,
+.plats .carte-4,
+.dessert .carte-4 {
+  -webkit-animation: apparition-menu 0.6s 0.8 ease;
+          animation: apparition-menu 0.6s 0.8 ease;
+}
+.entree_title,
+.plats_title,
+.dessert_title {
+  align-content: left;
+  margin: 2rem 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.entree_title::after,
+.plats_title::after,
+.dessert_title::after {
+  content: "";
+  width: 3.5rem;
+  height: 4px;
+  background-color: #99e2d0;
+}
+.entree_cards,
+.plats_cards,
+.dessert_cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: auto;
+  padding: 1rem 0;
+}
+.entree_cards_card,
+.plats_cards_card,
+.dessert_cards_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 0;
+  border-radius: 25px;
+  width: 95%;
+  height: 6rem;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 1px #6e6e6e;
+}
+.entree_cards_card_left,
+.plats_cards_card_left,
+.dessert_cards_card_left {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+  margin-left: 1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.entree_cards_card_left-title,
+.plats_cards_card_left-title,
+.dessert_cards_card_left-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+.entree_cards_card_left-description,
+.plats_cards_card_left-description,
+.dessert_cards_card_left-description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.entree_cards_card_right,
+.plats_cards_card_right,
+.dessert_cards_card_right {
+  display: flex;
+  width: 10rem;
+  height: 100%;
+  margin-right: -5rem;
+}
+.entree_cards_card_right:hover,
+.plats_cards_card_right:hover,
+.dessert_cards_card_right:hover {
+  margin-right: 0;
+  transition: 0.5s ease;
+}
+.entree_cards_card_right:hover span i,
+.plats_cards_card_right:hover span i,
+.dessert_cards_card_right:hover span i {
+  -webkit-animation: check-spinner 1s ease-in-out;
+          animation: check-spinner 1s ease-in-out;
+}
+.entree_cards_card_right-price,
+.plats_cards_card_right-price,
+.dessert_cards_card_right-price {
+  padding-top: 4rem;
+  width: 50%;
+  border-radius: 0 25px 25px 0;
+}
+.entree_cards_card_right-span,
+.plats_cards_card_right-span,
+.dessert_cards_card_right-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  border-radius: 0 25px 25px 0;
+  width: 50%;
+  height: 100%;
+  background-color: #99e2d0;
+}
+.entree_cards_card_right-span i,
+.plats_cards_card_right-span i,
+.dessert_cards_card_right-span i {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.carte::before {
+  content: "";
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  margin: 2rem 0;
+}
+
+.resto-name-hearts label {
   position: absolute;
   width: 2rem;
   height: 2rem;
   opacity: 1;
-  right: 1rem;
+  right: 2rem;
+  top: 4rem;
   z-index: 1;
+}
+
+#toggle-menu {
+  position: absolute;
+  display: none;
+}
+#toggle-menu input {
+  width: 0.5rem;
+  height: 0.5rem;
+  right: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+#toggle-menu:checked ~ .heart-menu-1 {
+  opacity: 1;
+}
+
+#toggle-menu:checked ~ .heart-menu-2 {
+  opacity: 0;
 }
 
 nav {
@@ -697,6 +783,20 @@ footer ul li a {
   opacity: 1;
   right: 1rem;
   top: 0;
+}
+
+.heart-menu-1 {
+  position: absolute;
+  opacity: 0;
+  right: 2rem;
+  top: 4rem;
+}
+
+.heart-menu-2 {
+  position: absolute;
+  opacity: 1;
+  right: 2rem;
+  top: 4rem;
 }
 
 button {

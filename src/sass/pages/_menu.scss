@@ -19,16 +19,19 @@ main {
   @include flex(space-around, center, row, 0);
   padding-top: 3rem;
   border-radius: 35px 35px 0 0;
-  &-hearts:hover {
-    .heart1 {
-      opacity: 1;
-      transition-duration: 0.5s;
-    }
-    .heart2 {
-      opacity: 0;
-      transition-duration: 0.2s;
-    }
-  }
+
+  // &-hearts {
+  //     &:hover {
+  //       .heart1 {
+  //         opacity: 1;
+  //         transition-duration: 0.5s;
+  //       }
+  //       .heart2 {
+  //         opacity: 0;
+  //         transition-duration: 0.2s;
+  //       }
+  //     }
+  // }
 }
 
 .menu {
@@ -124,4 +127,31 @@ main {
 .commander {
   @include flex(center, center, row, 0);
   margin: 2rem 0;
+}
+.resto-name-hearts {
+  label {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    opacity: 1;
+    right: 2rem;
+    top: 4rem;
+    z-index: 1;
+  }
+}
+
+#toggle-menu {
+  position: absolute;
+  display: none;
+  input {
+    @include size(0.5rem, 0.5rem);
+    right: 1rem;
+    appearance: none;
+  }
+}
+#toggle-menu:checked ~ .heart-menu-1 {
+  opacity: 1;
+}
+#toggle-menu:checked ~ .heart-menu-2 {
+  opacity: 0;
 }
