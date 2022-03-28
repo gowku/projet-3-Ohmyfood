@@ -147,7 +147,7 @@ h3 {
 }
 
 .fonctionnement_list_item p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -248,7 +248,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 2rem;
+  gap: 5%;
   width: 90%;
   height: 5em;
   border-radius: 30px;
@@ -256,9 +256,15 @@ body {
 }
 .fonctionnement_list_item:hover {
   background-color: #e4d5f6;
+  transition: 0.3s;
+}
+.fonctionnement_list_item:hover svg {
+  height: 1.7em;
+  fill: #9356dc;
 }
 .fonctionnement_list_item svg {
   height: 1.7em;
+  fill: #808080;
 }
 .fonctionnement_list_item:nth-child(1)::before {
   content: "1";
@@ -324,6 +330,7 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 4rem;
+  margin: 1rem;
 }
 
 .card {
@@ -378,7 +385,7 @@ body {
   padding-top: 1rem;
 }
 .card_body_right {
-  margin-right: 2rem;
+  margin-right: 1rem;
   position: relative;
 }
 
@@ -404,9 +411,11 @@ body {
 }
 #body-index #toggle-1:checked ~ .heart1 {
   opacity: 1;
+  transition: 0.3s;
 }
 #body-index #toggle-1:checked ~ .heart2 {
   opacity: 0;
+  transition: 0.3s;
 }
 #body-index #toggle-2 {
   position: absolute;
@@ -422,9 +431,11 @@ body {
 }
 #body-index #toggle-2:checked ~ .heart1 {
   opacity: 1;
+  transition: 0.3s;
 }
 #body-index #toggle-2:checked ~ .heart2 {
   opacity: 0;
+  transition: 0.3s;
 }
 #body-index #toggle-3 {
   position: absolute;
@@ -440,9 +451,11 @@ body {
 }
 #body-index #toggle-3:checked ~ .heart1 {
   opacity: 1;
+  transition: 0.3s;
 }
 #body-index #toggle-3:checked ~ .heart2 {
   opacity: 0;
+  transition: 0.3s;
 }
 #body-index #toggle-4 {
   position: absolute;
@@ -458,9 +471,11 @@ body {
 }
 #body-index #toggle-4:checked ~ .heart1 {
   opacity: 1;
+  transition: 0.3s;
 }
 #body-index #toggle-4:checked ~ .heart2 {
   opacity: 0;
+  transition: 0.3s;
 }
 
 .header {
@@ -667,10 +682,12 @@ main {
 }
 
 #toggle-menu:checked ~ .heart-menu-1 {
+  transition: 0.3s;
   opacity: 1;
 }
 
 #toggle-menu:checked ~ .heart-menu-2 {
+  transition: 0.3s;
   opacity: 0;
 }
 
@@ -1085,11 +1102,6 @@ main {
           animation: check-spinner 1s ease-in-out;
 }
 
-@media screen and (min-width: 40em) {
-  .header img {
-    width: 70rem;
-  }
-}
 nav {
   height: 4rem;
   display: flex;
@@ -1134,36 +1146,30 @@ nav a .fa-arrow-left {
   color: black;
 }
 
-@media screen and (min-width: 40em) {
-  body {
-    max-width: 70rem;
-  }
-
-  .container-restaurants {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 2rem repeat(2, 1fr) 2rem;
-    grid-template-rows: repeat(auto, 15rem);
-  }
-  .container-restaurants .grid-1 {
-    grid-column: 2/3;
-  }
-  .container-restaurants .grid-2 {
-    grid-column: 3/4;
-  }
-  .container-restaurants .grid-3 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .container-restaurants .grid-4 {
-    grid-row: 2/3;
-    grid-column: 3/4;
-  }
-
-  .card {
-    width: 100%;
-  }
+.container-restaurants {
+  gap: 2rem;
+  grid-template-columns: 2rem repeat(2, 1fr) 2rem;
+  grid-template-rows: repeat(auto, 15rem);
 }
+.container-restaurants .grid-1 {
+  grid-column: 2/3;
+}
+.container-restaurants .grid-2 {
+  grid-column: 3/4;
+}
+.container-restaurants .grid-3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.container-restaurants .grid-4 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+.card {
+  width: 100%;
+}
+
 .logo-footer {
   width: 8rem;
   height: 1.2rem;
@@ -1205,6 +1211,33 @@ footer ul li a {
   color: white;
 }
 
+.body_menu footer {
+  padding-top: 2rem;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  background-color: white;
+  -webkit-animation: opacity 0.1s 2.9s linear both;
+          animation: opacity 0.1s 2.9s linear both;
+}
+.loading-spinner {
+  width: 8rem;
+  height: 8rem;
+  border: 8px solid #9356dc;
+  border-top-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner 2.9s ease-in-out forwards;
+          animation: spinner 2.9s ease-in-out forwards;
+}
+
 .fa-heart {
   font-size: 2rem;
 }
@@ -1221,14 +1254,14 @@ footer ul li a {
   position: absolute;
   opacity: 0;
   right: 1rem;
-  top: 0;
+  top: -1rem;
 }
 
 .heart2 {
   position: absolute;
   opacity: 1;
   right: 1rem;
-  top: 0;
+  top: -1rem;
 }
 
 .heart-menu-1 {
@@ -1252,19 +1285,60 @@ button {
   color: white;
   border-style: none;
   box-shadow: 0px 8px 12px 1px #6e6e6e;
+  min-width: 10rem;
+  max-width: 15rem;
   width: 55%;
-  height: 3em;
+  height: 3rem;
   border-radius: 30px;
   margin-bottom: 2em;
 }
 button:hover {
   background-color: #ae80e5;
+  transition: 0.3s;
   box-shadow: 0px 0px 5px 3px #6e6e6e;
 }
 
-.explorer {
-  width: 55%;
-  height: 3em;
-  border-radius: 30px;
-  margin-bottom: 2em;
+@media screen and (min-width: 660px) {
+  body {
+    max-width: 70rem;
+  }
+
+  .container-restaurants {
+    display: grid;
+  }
+
+  .header img {
+    width: 70rem;
+  }
+}
+@media screen and (min-width: 660px) and (max-width: 755px) {
+  .heart1 {
+    top: 0.5rem;
+  }
+
+  .heart2 {
+    top: 0.5rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .resto-name-hearts label {
+    top: 7rem;
+  }
+
+  .heart-menu-1 {
+    top: 7rem;
+  }
+
+  .heart-menu-2 {
+    top: 7rem;
+  }
+}
+@media screen and (max-width: 315px) {
+  .heart1 {
+    top: 0.5rem;
+  }
+
+  .heart2 {
+    top: 0.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */

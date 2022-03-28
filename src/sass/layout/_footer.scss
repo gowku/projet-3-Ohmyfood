@@ -6,9 +6,7 @@
 footer {
   @include flex(center, left, column, 2rem);
   background-color: $bg-footer;
-
   padding: 4rem 0 2rem;
-
   ul {
     @include flex(center, left, column, 0.5rem);
     margin-left: 1rem;
@@ -24,5 +22,10 @@ footer {
         color: white;
       }
     }
+  }
+}
+.body_menu {
+  footer {
+    padding-top: 2rem;
   }
 }

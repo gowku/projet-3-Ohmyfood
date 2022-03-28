@@ -1,0 +1,42 @@
+@media screen and (min-width: 660px) {
+  body {
+    max-width: 70rem;
+  }
+  .container-restaurants {
+    display: grid;
+  }
+  .header img {
+    width: 70rem;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 755px) {
+  .heart1 {
+    top: 0.5rem;
+  }
+  .heart2 {
+    top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .resto-name-hearts {
+    label {
+      top: 7rem;
+    }
+  }
+  .heart-menu-1 {
+    top: 7rem;
+  }
+  .heart-menu-2 {
+    top: 7rem;
+  }
+}
+@media screen and (max-width: 315px) {
+  .heart1 {
+    top: 0.5rem;
+  }
+  .heart2 {
+    top: 0.5rem;
+  }
+}

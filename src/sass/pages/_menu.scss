@@ -152,9 +152,11 @@ main {
   }
 }
 #toggle-menu:checked ~ .heart-menu-1 {
+  transition: 0.3s;
   opacity: 1;
 }
 #toggle-menu:checked ~ .heart-menu-2 {
+  transition: 0.3s;
   opacity: 0;
 }
 
@@ -190,19 +192,5 @@ main {
         }
       }
     }
-  }
-}
-
-//  :hover {
-//   margin-right: 0;
-//   transition: 0.5s ease;
-//   & span i {
-//     animation: check-spinner 1s ease-in-out;
-//   }
-// }
-
-@media screen and (min-width: 40em) {
-  .header img {
-    width: 70rem;
   }
 }

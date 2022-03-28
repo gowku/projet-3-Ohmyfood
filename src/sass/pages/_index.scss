@@ -43,15 +43,21 @@ body {
     margin: 1.5em 0 3em;
     &_item {
       background-color: $light-grey;
-      @include flex(center, center, row, 2rem);
+      @include flex(center, center, row, 5%);
       @include size(90%, 5em);
       border-radius: 30px;
       position: relative;
       &:hover {
         background-color: lighten($color: $primary, $amount: 30);
+        transition: 0.3s;
+        svg {
+          height: 1.7em;
+          fill: $primary;
+        }
       }
       svg {
         height: 1.7em;
+        fill: $darker-grey;
       }
 
       @for $i from 1 to 4 {
@@ -76,7 +82,6 @@ body {
 }
 
 .principal_index {
-  //margin-top: 5rem;
   padding: 5rem 0;
   background-color: $light-grey;
   h3 {
@@ -87,6 +92,7 @@ body {
 
 .container-restaurants {
   @include flex(center, center, column, 4rem);
+  margin: 1rem;
 }
 
 .card {
@@ -128,8 +134,9 @@ body {
       }
     }
     &_right {
-      margin-right: 2rem;
+      margin-right: 1rem;
       position: relative;
+
       // &:hover {
       //   .heart1 {
       //     opacity: 1;
@@ -179,9 +186,11 @@ body {
     }
     #toggle-#{$i}:checked ~ .heart1 {
       opacity: 1;
+      transition: 0.3s;
     }
     #toggle-#{$i}:checked ~ .heart2 {
       opacity: 0;
+      transition: 0.3s;
     }
   }
 }
