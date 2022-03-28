@@ -4,14 +4,14 @@
   margin-left: 1rem;
 }
 footer {
-  @include flex(center, left, column, 2rem);
+  @include flex(center, flex-start, column, 2rem);
   background-color: $bg-footer;
   padding: 4rem 0 2rem;
   ul {
-    @include flex(center, left, column, 0.5rem);
+    @include flex(center, flex-start, column, 0.5rem);
     margin-left: 1rem;
     li {
-      @include flex(0, left, row, 0.5rem);
+      @include flex(flex-start, flex-start, row, 0.5rem);
       color: white;
       margin-left: 1rem;
       .fa-utensils,

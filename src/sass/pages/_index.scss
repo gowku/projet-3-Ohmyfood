@@ -126,7 +126,7 @@ body {
     padding-bottom: 1rem;
 
     &_left {
-      @include flex(center, left, column, 0.5rem);
+      @include flex(center, flex-start, column, 0.5rem);
       margin-left: 2rem;
 
       &-title {

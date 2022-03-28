@@ -35,7 +35,7 @@ main {
 }
 
 .menu {
-  @include flex(space-between, left, column, 0);
+  @include flex(space-between, stretch, column, 0);
 }
 
 .entree,
@@ -47,7 +47,7 @@ main {
     }
   }
   &_title {
-    align-content: left;
+    align-content: start;
     margin: 2rem 0 0 2rem;
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@ main {
       box-shadow: 0px 0px 5px 1px #6e6e6e;
       position: relative;
       &_left {
-        @include flex(left, left, column, 0.5rem);
+        @include flex(flex-start, flex-start, column, 0.5rem);
         height: 100%;
         margin-left: 1em;
         white-space: nowrap;

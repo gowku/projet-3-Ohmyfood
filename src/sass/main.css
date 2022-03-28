@@ -376,7 +376,7 @@ body {
 .card_body_left {
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: flex-start;
   flex-direction: column;
   gap: 0.5rem;
   margin-left: 2rem;
@@ -509,7 +509,7 @@ main {
 .menu {
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  align-items: stretch;
   flex-direction: column;
   gap: 0;
 }
@@ -541,7 +541,7 @@ main {
 .entree_title,
 .plats_title,
 .dessert_title {
-  align-content: left;
+  align-content: start;
   margin: 2rem 0 0 2rem;
   display: flex;
   flex-direction: column;
@@ -585,8 +585,8 @@ main {
 .plats_cards_card_left,
 .dessert_cards_card_left {
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   gap: 0.5rem;
   height: 100%;
@@ -1149,7 +1149,7 @@ nav a .fa-arrow-left {
 .container-restaurants {
   gap: 2rem;
   grid-template-columns: 2rem repeat(2, 1fr) 2rem;
-  grid-template-rows: repeat(auto, 15rem);
+  grid-template-rows: auto;
 }
 .container-restaurants .grid-1 {
   grid-column: 2/3;
@@ -1180,7 +1180,7 @@ nav a .fa-arrow-left {
 footer {
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: flex-start;
   flex-direction: column;
   gap: 2rem;
   background-color: #353535;
@@ -1189,15 +1189,15 @@ footer {
 footer ul {
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: flex-start;
   flex-direction: column;
   gap: 0.5rem;
   margin-left: 1rem;
 }
 footer ul li {
   display: flex;
-  justify-content: 0;
-  align-items: left;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: row;
   gap: 0.5rem;
   color: white;

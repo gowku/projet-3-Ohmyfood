@@ -1,7 +1,7 @@
 .container-restaurants {
   gap: 2rem;
   grid-template-columns: 2rem repeat(2, 1fr) 2rem;
-  grid-template-rows: repeat(auto, 15rem);
+  grid-template-rows: auto;
 
   .grid-1 {
     grid-column: 2/3;
