@@ -11,6 +11,12 @@
 }
 
 @media screen and (min-width: 660px) and (max-width: 755px) {
+  #body-index {
+    label {
+      top: 0.5rem;
+      bottom: 0.5rem;
+    }
+  }
   .heart1 {
     top: 0.5rem;
   }

@@ -173,6 +173,7 @@ body {
     opacity: 1;
     right: 1rem;
     z-index: 1;
+    top: -1rem;
   }
   @for $i from 1 to 5 {
     #toggle-#{$i} {
