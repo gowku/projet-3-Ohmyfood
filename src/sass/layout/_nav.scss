@@ -1,18 +1,42 @@
 nav {
-  height: 4em;
+  height: 4rem;
   @include flex(center, center, row, 0);
   position: relative;
-  box-shadow: 0 -10px black;
+  box-shadow: 0 -30px black;
 
-  img {
-    height: 1.7em;
+  .shadow {
+    width: 100%;
+    height: 4em;
+    margin-top: 1.5rem;
+    &::after {
+      content: "";
+      display: block;
+      height: 6px;
+      margin-top: 0.7rem;
+      background: transparent;
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+        top,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ); /* Chrome10-25,Safari5.1-6 */
+    }
+  }
+
+  .logo {
+    height: 2em;
+    width: 100%;
+    margin-top: 0.5rem;
+    @include flex(center, center, column, 0);
   }
   a {
     position: absolute;
     left: 0;
     margin-left: 5%;
-    i {
-      color: black !important;
+    .fa-arrow-left {
+      color: black;
     }
   }
 }
+// #body-index {
+// }

@@ -7,7 +7,7 @@ body {
   @include flex(center, center, row, 0);
   background-color: $dark-grey;
   i {
-    color: black !important;
+    color: black;
   }
   p {
     @include flex(center, center, row, 0);

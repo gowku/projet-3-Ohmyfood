@@ -195,7 +195,7 @@ body {
   background-color: #eaeaea;
 }
 .localisation i {
-  color: black !important;
+  color: black;
 }
 .localisation p {
   display: flex;
@@ -649,7 +649,7 @@ main {
   height: 2rem;
   opacity: 1;
   right: 2rem;
-  top: 4rem;
+  top: 3.5rem;
   z-index: 1;
 }
 
@@ -1085,55 +1085,89 @@ main {
           animation: check-spinner 1s ease-in-out;
 }
 
+@media screen and (min-width: 40em) {
+  .header img {
+    width: 70rem;
+  }
+}
 nav {
-  height: 4em;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 0;
   position: relative;
-  box-shadow: 0 -10px black;
+  box-shadow: 0 -30px black;
 }
-nav img {
-  height: 1.7em;
+nav .shadow {
+  width: 100%;
+  height: 4em;
+  margin-top: 1.5rem;
+}
+nav .shadow::after {
+  content: "";
+  display: block;
+  height: 6px;
+  margin-top: 0.7rem;
+  background: transparent;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+}
+nav .logo {
+  height: 2em;
+  width: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
 }
 nav a {
   position: absolute;
   left: 0;
   margin-left: 5%;
 }
-nav a i {
-  color: black !important;
+nav a .fa-arrow-left {
+  color: black;
 }
 
-.loading {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
-  background-color: white;
-  -webkit-animation: opacity 0.1s 2.9s linear both;
-          animation: opacity 0.1s 2.9s linear both;
-}
-.loading-spinner {
-  width: 8rem;
-  height: 8rem;
-  border: 8px solid #9356dc;
-  border-top-color: transparent;
-  border-radius: 50%;
-  -webkit-animation: spinner 2.9s ease-in-out forwards;
-          animation: spinner 2.9s ease-in-out forwards;
-}
+@media screen and (min-width: 40em) {
+  body {
+    max-width: 70rem;
+  }
 
+  .container-restaurants {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2rem repeat(2, 1fr) 2rem;
+    grid-template-rows: repeat(auto, 15rem);
+  }
+  .container-restaurants .grid-1 {
+    grid-column: 2/3;
+  }
+  .container-restaurants .grid-2 {
+    grid-column: 3/4;
+  }
+  .container-restaurants .grid-3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .container-restaurants .grid-4 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
 .logo-footer {
   width: 8rem;
   height: 1.2rem;
-  fill: white;
+  filter: invert(100%);
   margin-left: 1rem;
 }
 
@@ -1163,8 +1197,9 @@ footer ul li {
   color: white;
   margin-left: 1rem;
 }
-footer ul li i {
-  color: white !important;
+footer ul li .fa-utensils,
+footer ul li .fa-handshake-angle {
+  color: white;
 }
 footer ul li a {
   color: white;
@@ -1200,14 +1235,14 @@ footer ul li a {
   position: absolute;
   opacity: 0;
   right: 2rem;
-  top: 4rem;
+  top: 3.5rem;
 }
 
 .heart-menu-2 {
   position: absolute;
   opacity: 1;
   right: 2rem;
-  top: 4rem;
+  top: 3.5rem;
 }
 
 button {

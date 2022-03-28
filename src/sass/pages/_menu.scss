@@ -137,7 +137,7 @@ main {
     height: 2rem;
     opacity: 1;
     right: 2rem;
-    top: 4rem;
+    top: 3.5rem;
     z-index: 1;
   }
 }
@@ -200,3 +200,9 @@ main {
 //     animation: check-spinner 1s ease-in-out;
 //   }
 // }
+
+@media screen and (min-width: 40em) {
+  .header img {
+    width: 70rem;
+  }
+}
