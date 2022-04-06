@@ -1,16 +1,16 @@
-// .loading {
-//   position: absolute;
-//   width: 100%;
-//   height: 100vh;
-//   @include flex(center, center, row, 0);
-//   background-color: white;
-//   animation: opacity 0.1s 2.9s linear both;
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  @include flex(center, center, row, 0);
+  background-color: white;
+  animation: opacity 0.1s 2.9s linear both;
 
-//   &-spinner {
-//     @include size(8rem, 8rem);
-//     border: 8px solid $primary;
-//     border-top-color: transparent;
-//     border-radius: 50%;
-//     animation: spinner 2.9s ease-in-out forwards;
-//   }
-// }
+  &-spinner {
+    @include size(8rem, 8rem);
+    border: 8px solid $primary;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spinner 2.9s ease-in-out forwards;
+  }
+}
