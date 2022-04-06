@@ -346,7 +346,7 @@ body {
   height: 14rem;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 35px 35px 0 0;
 }
 .card_img p {
@@ -358,8 +358,8 @@ body {
   flex-direction: row;
   gap: 0;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 20px;
+  top: 20px;
   background-color: #99e2d0;
   color: #008766;
 }
@@ -406,8 +406,8 @@ body {
   height: 0.5rem;
   right: 1rem;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 #body-index #toggle-1:checked ~ .heart1 {
   opacity: 1;
@@ -426,8 +426,8 @@ body {
   height: 0.5rem;
   right: 1rem;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 #body-index #toggle-2:checked ~ .heart1 {
   opacity: 1;
@@ -446,8 +446,8 @@ body {
   height: 0.5rem;
   right: 1rem;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 #body-index #toggle-3:checked ~ .heart1 {
   opacity: 1;
@@ -466,8 +466,8 @@ body {
   height: 0.5rem;
   right: 1rem;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 #body-index #toggle-4:checked ~ .heart1 {
   opacity: 1;
@@ -485,7 +485,7 @@ body {
   height: 17rem;
   width: 40rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
 }
 
@@ -518,25 +518,25 @@ main {
 .plats .carte-1,
 .dessert .carte-1 {
   -webkit-animation: apparition-menu 0.6s 0.2 ease;
-          animation: apparition-menu 0.6s 0.2 ease;
+  animation: apparition-menu 0.6s 0.2 ease;
 }
 .entree .carte-2,
 .plats .carte-2,
 .dessert .carte-2 {
   -webkit-animation: apparition-menu 0.6s 0.4 ease;
-          animation: apparition-menu 0.6s 0.4 ease;
+  animation: apparition-menu 0.6s 0.4 ease;
 }
 .entree .carte-3,
 .plats .carte-3,
 .dessert .carte-3 {
   -webkit-animation: apparition-menu 0.6s 0.6 ease;
-          animation: apparition-menu 0.6s 0.6 ease;
+  animation: apparition-menu 0.6s 0.6 ease;
 }
 .entree .carte-4,
 .plats .carte-4,
 .dessert .carte-4 {
   -webkit-animation: apparition-menu 0.6s 0.8 ease;
-          animation: apparition-menu 0.6s 0.8 ease;
+  animation: apparition-menu 0.6s 0.8 ease;
 }
 .entree_title,
 .plats_title,
@@ -677,8 +677,8 @@ main {
   height: 0.5rem;
   right: 1rem;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 #toggle-menu:checked ~ .heart-menu-1 {
@@ -714,8 +714,8 @@ main {
   height: 0.5rem;
   left: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .entree_cards_card #toggle-card-1:checked ~ .entree_cards_card_right,
 .entree_cards_card #toggle-card-1:checked ~ .plats_cards_card_right,
@@ -739,7 +739,7 @@ main {
 .dessert_cards_card #toggle-card-1:checked ~ .plats_cards_card_right span i,
 .dessert_cards_card #toggle-card-1:checked ~ .dessert_cards_card_right span i {
   -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
+  animation: check-spinner 1s ease-in-out;
 }
 .entree_cards_card #toggle-card-2,
 .plats_cards_card #toggle-card-2,
@@ -754,8 +754,8 @@ main {
   height: 0.5rem;
   left: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .entree_cards_card #toggle-card-2:checked ~ .entree_cards_card_right,
 .entree_cards_card #toggle-card-2:checked ~ .plats_cards_card_right,
@@ -779,7 +779,7 @@ main {
 .dessert_cards_card #toggle-card-2:checked ~ .plats_cards_card_right span i,
 .dessert_cards_card #toggle-card-2:checked ~ .dessert_cards_card_right span i {
   -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
+  animation: check-spinner 1s ease-in-out;
 }
 .entree_cards_card #toggle-card-3,
 .plats_cards_card #toggle-card-3,
@@ -794,8 +794,8 @@ main {
   height: 0.5rem;
   left: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .entree_cards_card #toggle-card-3:checked ~ .entree_cards_card_right,
 .entree_cards_card #toggle-card-3:checked ~ .plats_cards_card_right,
@@ -819,7 +819,7 @@ main {
 .dessert_cards_card #toggle-card-3:checked ~ .plats_cards_card_right span i,
 .dessert_cards_card #toggle-card-3:checked ~ .dessert_cards_card_right span i {
   -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
+  animation: check-spinner 1s ease-in-out;
 }
 .entree_cards_card #toggle-card-4,
 .plats_cards_card #toggle-card-4,
@@ -834,8 +834,8 @@ main {
   height: 0.5rem;
   left: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .entree_cards_card #toggle-card-4:checked ~ .entree_cards_card_right,
 .entree_cards_card #toggle-card-4:checked ~ .plats_cards_card_right,
@@ -859,7 +859,7 @@ main {
 .dessert_cards_card #toggle-card-4:checked ~ .plats_cards_card_right span i,
 .dessert_cards_card #toggle-card-4:checked ~ .dessert_cards_card_right span i {
   -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
+  animation: check-spinner 1s ease-in-out;
 }
 .entree_cards_card #toggle-card-5,
 .plats_cards_card #toggle-card-5,
@@ -874,8 +874,8 @@ main {
   height: 0.5rem;
   left: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .entree_cards_card #toggle-card-5:checked ~ .entree_cards_card_right,
 .entree_cards_card #toggle-card-5:checked ~ .plats_cards_card_right,
@@ -899,7 +899,7 @@ main {
 .dessert_cards_card #toggle-card-5:checked ~ .plats_cards_card_right span i,
 .dessert_cards_card #toggle-card-5:checked ~ .dessert_cards_card_right span i {
   -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
+  animation: check-spinner 1s ease-in-out;
 }
 .entree_cards_card #toggle-card-6,
 .plats_cards_card #toggle-card-6,
@@ -914,8 +914,8 @@ main {
   height: 0.5rem;
   left: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .entree_cards_card #toggle-card-6:checked ~ .entree_cards_card_right,
 .entree_cards_card #toggle-card-6:checked ~ .plats_cards_card_right,
@@ -939,7 +939,7 @@ main {
 .dessert_cards_card #toggle-card-6:checked ~ .plats_cards_card_right span i,
 .dessert_cards_card #toggle-card-6:checked ~ .dessert_cards_card_right span i {
   -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
+  animation: check-spinner 1s ease-in-out;
 }
 .entree_cards_card #toggle-card-7,
 .plats_cards_card #toggle-card-7,
@@ -954,8 +954,8 @@ main {
   height: 0.5rem;
   left: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .entree_cards_card #toggle-card-7:checked ~ .entree_cards_card_right,
 .entree_cards_card #toggle-card-7:checked ~ .plats_cards_card_right,
@@ -979,7 +979,7 @@ main {
 .dessert_cards_card #toggle-card-7:checked ~ .plats_cards_card_right span i,
 .dessert_cards_card #toggle-card-7:checked ~ .dessert_cards_card_right span i {
   -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
+  animation: check-spinner 1s ease-in-out;
 }
 .entree_cards_card #toggle-card-8,
 .plats_cards_card #toggle-card-8,
@@ -994,8 +994,8 @@ main {
   height: 0.5rem;
   left: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .entree_cards_card #toggle-card-8:checked ~ .entree_cards_card_right,
 .entree_cards_card #toggle-card-8:checked ~ .plats_cards_card_right,
@@ -1019,7 +1019,7 @@ main {
 .dessert_cards_card #toggle-card-8:checked ~ .plats_cards_card_right span i,
 .dessert_cards_card #toggle-card-8:checked ~ .dessert_cards_card_right span i {
   -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
+  animation: check-spinner 1s ease-in-out;
 }
 .entree_cards_card #toggle-card-9,
 .plats_cards_card #toggle-card-9,
@@ -1034,8 +1034,8 @@ main {
   height: 0.5rem;
   left: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .entree_cards_card #toggle-card-9:checked ~ .entree_cards_card_right,
 .entree_cards_card #toggle-card-9:checked ~ .plats_cards_card_right,
@@ -1059,7 +1059,7 @@ main {
 .dessert_cards_card #toggle-card-9:checked ~ .plats_cards_card_right span i,
 .dessert_cards_card #toggle-card-9:checked ~ .dessert_cards_card_right span i {
   -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
+  animation: check-spinner 1s ease-in-out;
 }
 .entree_cards_card #toggle-card-10,
 .plats_cards_card #toggle-card-10,
@@ -1074,8 +1074,8 @@ main {
   height: 0.5rem;
   left: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .entree_cards_card #toggle-card-10:checked ~ .entree_cards_card_right,
 .entree_cards_card #toggle-card-10:checked ~ .plats_cards_card_right,
@@ -1099,7 +1099,7 @@ main {
 .dessert_cards_card #toggle-card-10:checked ~ .plats_cards_card_right span i,
 .dessert_cards_card #toggle-card-10:checked ~ .dessert_cards_card_right span i {
   -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
+  animation: check-spinner 1s ease-in-out;
 }
 
 nav {
@@ -1226,7 +1226,7 @@ footer ul li a {
   gap: 0;
   background-color: white;
   -webkit-animation: opacity 0.1s 2.9s linear both;
-          animation: opacity 0.1s 2.9s linear both;
+  animation: opacity 0.1s 2.9s linear both;
 }
 .loading-spinner {
   width: 8rem;
@@ -1235,7 +1235,7 @@ footer ul li a {
   border-top-color: transparent;
   border-radius: 50%;
   -webkit-animation: spinner 2.9s ease-in-out forwards;
-          animation: spinner 2.9s ease-in-out forwards;
+  animation: spinner 2.9s ease-in-out forwards;
 }
 
 .fa-heart {
@@ -1341,4 +1341,4 @@ button:hover {
   .heart2 {
     top: 0.5rem;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
