@@ -603,6 +603,7 @@ main {
   text-overflow: ellipsis;
   overflow: hidden;
   margin-top: 1rem;
+  width: 100%;
 }
 .entree_cards_card_left-description,
 .plats_cards_card_left-description,
@@ -610,6 +611,7 @@ main {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: 100%;
 }
 .entree_cards_card_right,
 .plats_cards_card_right,
@@ -644,10 +646,6 @@ main {
 .dessert_cards_card_right-span i {
   font-size: 1.8rem;
   color: white;
-}
-
-.carte::before {
-  content: "";
 }
 
 .commander {
