@@ -38,152 +38,148 @@ main {
   @include flex(space-between, stretch, column, 0);
 }
 
-.entree,
-.plats,
-.dessert {
-  @for $i from 1 to 5 {
-    .carte-#{$i} {
-      animation: apparition-menu 0.6s $i * 0.2 ease;
-    }
+@for $i from 0 to 3 {
+  .carte-#{$i} {
+    animation: apparition-menu 1.5s ease calc(#{$i} * 0.5s);
   }
-  &_title {
-    align-content: start;
-    margin: 2rem 0 0 2rem;
-    display: flex;
-    flex-direction: column;
-    &::after {
-      content: "";
-      @include size(3.5rem, 4px);
-      background-color: $green;
-    }
-  }
-  &_cards {
-    @include flex(space-between, center, column, 2rem);
-    height: auto;
-    padding: 1rem 0;
-    &_card {
-      @include flex(space-between, flex-end, row, 0);
-      border-radius: 25px;
-      @include size(95%, 6rem);
-      background-color: white;
-      overflow: hidden;
-      box-shadow: 0px 0px 5px 1px #6e6e6e;
-      position: relative;
 
-      &_left {
-        @include flex(flex-start, flex-start, column, 0.5rem);
-        height: 100%;
-        margin-left: 1em;
-
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-
-        &-title {
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          margin-top: 1rem;
-          width: 100%;
-        }
-        &-description {
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          width: 100%;
-        }
+  .entree,
+  .plats,
+  .dessert {
+    &_title {
+      align-content: start;
+      margin: 2rem 0 0 2rem;
+      display: flex;
+      flex-direction: column;
+      &::after {
+        content: "";
+        @include size(3.5rem, 4px);
+        background-color: $green;
       }
-      &_right {
-        display: flex;
-        width: 10rem;
-        height: 100%;
-        margin-right: -5rem;
-        // &:hover {
-        //   margin-right: 0;
-        //   transition: 0.5s ease;
-        //   & span i {
-        //     animation: check-spinner 1s ease-in-out;
-        //   }
-        // }
-        &-price {
-          padding-top: 4rem;
-          width: 50%;
-          border-radius: 0 25px 25px 0;
+    }
+    &_cards {
+      @include flex(space-between, center, column, 2rem);
+      height: auto;
+      padding: 1rem 0;
+      &_card {
+        @include flex(space-between, flex-end, row, 0);
+        border-radius: 25px;
+        @include size(95%, 6rem);
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px 1px #6e6e6e;
+        position: relative;
+
+        &_left {
+          @include flex(flex-start, flex-start, column, 0.5rem);
+          height: 100%;
+          margin-left: 1em;
+
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+
+          &-title {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-top: 1rem;
+            width: 100%;
+          }
+          &-description {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 100%;
+          }
         }
-        &-span {
-          @include flex(center, center, row, 0);
-          border-radius: 0 25px 25px 0;
-          @include size(50%, 100%);
-          background-color: $green;
-          i {
-            font-size: 1.8rem;
-            color: white;
+        &_right {
+          display: flex;
+          width: 10rem;
+          height: 100%;
+          margin-right: -5rem;
+          // &:hover {
+          //   margin-right: 0;
+          //   transition: 0.5s ease;
+          //   & span i {
+          //     animation: check-spinner 1s ease-in-out;
+          //   }
+          // }
+          &-price {
+            padding-top: 4rem;
+            width: 50%;
+            border-radius: 0 25px 25px 0;
+          }
+          &-span {
+            @include flex(center, center, row, 0);
+            border-radius: 0 25px 25px 0;
+            @include size(50%, 100%);
+            background-color: $green;
+            i {
+              font-size: 1.8rem;
+              color: white;
+            }
           }
         }
       }
     }
   }
-}
 
-.commander {
-  @include flex(center, center, row, 0);
-  margin: 2rem 0;
-}
-.resto-name-hearts {
-  label {
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    opacity: 1;
-    right: 2rem;
-    top: 3.5rem;
-    z-index: 1;
+  .commander {
+    @include flex(center, center, row, 0);
+    margin: 2rem 0;
   }
-}
-
-#toggle-menu {
-  position: absolute;
-  display: none;
-  input {
-    @include size(0.5rem, 0.5rem);
-    right: 1rem;
-    appearance: none;
-  }
-}
-#toggle-menu:checked ~ .heart-menu-1 {
-  transition: 0.3s;
-  opacity: 1;
-}
-#toggle-menu:checked ~ .heart-menu-2 {
-  transition: 0.3s;
-  opacity: 0;
-}
-
-.entree_cards_card,
-.plats_cards_card,
-.dessert_cards_card {
-  label {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    top: 0;
-    z-index: 1;
-  }
-  @for $i from 1 to 11 {
-    #toggle-card-#{$i} {
+  .resto-name-hearts {
+    label {
       position: absolute;
-      display: none;
-      input {
-        @include size(0.5rem, 0.5rem);
-        left: 0;
-        appearance: none;
-      }
+      width: 2rem;
+      height: 2rem;
+      opacity: 1;
+      right: 2rem;
+      top: 3.5rem;
+      z-index: 1;
     }
-    #toggle-card-#{$i}:checked ~ .entree,
-    #toggle-card-#{$i}:checked ~ .plats,
-    #toggle-card-#{$i}:checked ~ .dessert {
-      &_cards_card_right {
+  }
+
+  #toggle-menu {
+    position: absolute;
+    display: none;
+    input {
+      @include size(0.5rem, 0.5rem);
+      right: 1rem;
+      appearance: none;
+    }
+  }
+  #toggle-menu:checked ~ .heart-menu-1 {
+    transition: 0.3s;
+    opacity: 1;
+  }
+  #toggle-menu:checked ~ .heart-menu-2 {
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .box {
+    label {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      top: 0;
+      z-index: 1;
+    }
+    @for $i from 1 to 11 {
+      #toggle-card-#{$i} {
+        position: absolute;
+        display: none;
+        input {
+          @include size(0.5rem, 0.5rem);
+          left: 0;
+          appearance: none;
+        }
+      }
+
+      #toggle-card-#{$i}:checked ~ .slide {
         margin-right: 0;
         transition: 0.5s ease;
         & span i {
@@ -191,5 +187,16 @@ main {
         }
       }
     }
+    // #toggle-card-#{$i}:checked ~ .entree,
+    // #toggle-card-#{$i}:checked ~ .plats,
+    // #toggle-card-#{$i}:checked ~ .dessert {
+    //   &_cards_card_right {
+    //     margin-right: 0;
+    //     transition: 0.5s ease;
+    //     & span i {
+    //       animation: check-spinner 1s ease-in-out;
+    //     }
+    //   }
+    // }
   }
 }

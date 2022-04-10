@@ -27,7 +27,18 @@
           <input type="checkbox" id="toggle-menu" />
           <label for="toggle-menu"></label>
           <div class="heart-menu-1">
-            <i class="fa-solid fa-heart"></i>
+            <svg class="fa-solid fa-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <defs>
+                <linearGradient id="gradient" x1="0" y1="0" x2="100%" y2="0">
+                  <stop offset="0%" stop-color="#fd6c9e" />
+                  <stop offset="100%" stop-color="#7f00ff" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"
+              />
+            </svg>
           </div>
           <div class="heart-menu-2">
             <i class="fa-regular fa-heart"></i>
@@ -37,39 +48,39 @@
       <div class="menu">
         <div class="entree">
           <h2 class="entree_title">ENTRÉES</h2>
-          <ul class="entree_cards">
-            <li class="entree_cards_card carte-1">
+          <ul class="entree_cards carte-0">
+            <li class="entree_cards_card box">
               <div class="entree_cards_card_left">
                 <h3 class="entree_cards_card_left-title">Tartare de thon</h3>
                 <p class="entree_cards_card_left-description">Assaisoné au yuzu</p>
               </div>
               <input type="checkbox" id="toggle-card-1" />
               <label for="toggle-card-1"></label>
-              <div class="entree_cards_card_right">
+              <div class="entree_cards_card_right slide">
                 <strong class="entree_cards_card_right-price">25 &#8364;</strong>
                 <span class="entree_cards_card_right-span"><i class="fa-solid fa-circle-check"></i></span>
               </div>
             </li>
-            <li class="entree_cards_card carte-2">
+            <li class="entree_cards_card box">
               <div class="entree_cards_card_left">
                 <h3 class="entree_cards_card_left-title">Bouchée de homard croustillant</h3>
                 <p class="entree_cards_card_left-description">Et sa farandole de petits légumes</p>
               </div>
               <input type="checkbox" id="toggle-card-2" />
               <label for="toggle-card-2"></label>
-              <div class="entree_cards_card_right">
+              <div class="entree_cards_card_right slide">
                 <strong class="entree_cards_card_right-price">35 &#8364;</strong>
                 <span class="entree_cards_card_right-span"><i class="fa-solid fa-circle-check"></i></span>
               </div>
             </li>
-            <li class="entree_cards_card carte-3">
+            <li class="entree_cards_card box">
               <div class="entree_cards_card_left">
                 <h3 class="entree_cards_card_left-title">Velouté de cèpes</h3>
                 <p class="entree_cards_card_left-description">Aux truffes</p>
               </div>
               <input type="checkbox" id="toggle-card-3" />
               <label for="toggle-card-3"></label>
-              <div class="entree_cards_card_right">
+              <div class="entree_cards_card_right slide">
                 <strong class="entree_cards_card_right-price">20 &#8364;</strong>
                 <span class="entree_cards_card_right-span"><i class="fa-solid fa-circle-check"></i></span>
               </div>
@@ -78,39 +89,39 @@
         </div>
         <div class="plats">
           <h2 class="plats_title">PLATS</h2>
-          <ul class="plats_cards">
-            <li class="plats_cards_card carte-1">
+          <ul class="plats_cards carte-1">
+            <li class="plats_cards_card box">
               <div class="plats_cards_card_left">
                 <h3 class="plats_cards_card_left-title">Poulet rôti aux herbes de provences</h3>
                 <p class="plats_cards_card_left-description">Et sa crème de truffe</p>
               </div>
               <input type="checkbox" id="toggle-card-4" />
               <label for="toggle-card-4"></label>
-              <div class="plats_cards_card_right">
+              <div class="plats_cards_card_right slide">
                 <strong class="plats_cards_card_right-price">40 &#8364;</strong>
                 <span class="plats_cards_card_right-span"><i class="fa-solid fa-circle-check"></i></span>
               </div>
             </li>
-            <li class="plats_cards_card carte-2">
+            <li class="plats_cards_card box">
               <div class="plats_cards_card_left">
                 <h3 class="plats_cards_card_left-title">Langouste rôtie</h3>
                 <p class="plats_cards_card_left-description">Et ses légumes de saison</p>
               </div>
               <input type="checkbox" id="toggle-card-5" />
               <label for="toggle-card-5"></label>
-              <div class="plats_cards_card_right">
+              <div class="plats_cards_card_right slide">
                 <strong class="plats_cards_card_right-price">35 &#8364;</strong>
                 <span class="plats_cards_card_right-span"><i class="fa-solid fa-circle-check"></i></span>
               </div>
             </li>
-            <li class="plats_cards_card carte-3">
+            <li class="plats_cards_card box">
               <div class="plats_cards_card_left">
                 <h3 class="plats_cards_card_left-title">Côte de boeuf angus</h3>
                 <p class="plats_cards_card_left-description">Et sa purée de panais</p>
               </div>
               <input type="checkbox" id="toggle-card-6" />
               <label for="toggle-card-6"></label>
-              <div class="plats_cards_card_right">
+              <div class="plats_cards_card_right slide">
                 <strong class="plats_cards_card_right-price">44 &#8364;</strong>
                 <span class="plats_cards_card_right-span"><i class="fa-solid fa-circle-check"></i></span>
               </div>
@@ -119,39 +130,39 @@
         </div>
         <div class="dessert">
           <h2 class="dessert_title">DESSERTS</h2>
-          <ul class="dessert_cards">
-            <li class="dessert_cards_card carte-1">
+          <ul class="dessert_cards carte-2">
+            <li class="dessert_cards_card box">
               <div class="dessert_cards_card_left">
                 <h3 class="dessert_cards_card_left-title">Farandole de desserts</h3>
                 <p class="dessert_cards_card_left-description">Du chef</p>
               </div>
               <input type="checkbox" id="toggle-card-7" />
               <label for="toggle-card-7"></label>
-              <div class="dessert_cards_card_right">
+              <div class="dessert_cards_card_right slide">
                 <strong class="dessert_cards_card_right-price">18 &#8364;</strong>
                 <span class="dessert_cards_card_right-span"><i class="fa-solid fa-circle-check"></i></span>
               </div>
             </li>
-            <li class="dessert_cards_card carte-2">
+            <li class="dessert_cards_card box">
               <div class="dessert_cards_card_left">
                 <h3 class="dessert_cards_card_left-title">Creme brulée</h3>
                 <p class="entree_cards_card_left-description">Revisitée</p>
               </div>
               <input type="checkbox" id="toggle-card-8" />
               <label for="toggle-card-8"></label>
-              <div class="dessert_cards_card_right">
+              <div class="dessert_cards_card_right slide">
                 <strong class="dessert_cards_card_right-price">22 &#8364;</strong>
                 <span class="dessert_cards_card_right-span"><i class="fa-solid fa-circle-check"></i></span>
               </div>
             </li>
-            <li class="dessert_cards_card carte-3">
+            <li class="dessert_cards_card box">
               <div class="dessert_cards_card_left">
                 <h3 class="dessert_cards_card_left-title">Tiramisu</h3>
                 <p class="dessert_cards_card_left-description">À la noisette</p>
               </div>
               <input type="checkbox" id="toggle-card-9" />
               <label for="toggle-card-9"></label>
-              <div class="dessert_cards_card_right">
+              <div class="dessert_cards_card_right slide">
                 <strong class="dessert_cards_card_right-price">23 &#8364;</strong>
                 <span class="dessert_cards_card_right-span"><i class="fa-solid fa-circle-check"></i></span>
               </div>

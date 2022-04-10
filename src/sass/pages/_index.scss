@@ -1,5 +1,5 @@
 body {
-  max-width: 40rem;
+  max-width: 60rem;
   margin: 0 auto;
   position: relative;
 }
@@ -127,7 +127,7 @@ body {
 
     &_left {
       @include flex(center, flex-start, column, 0.5rem);
-      margin-left: 2rem;
+      margin-left: 1rem;
 
       &-title {
         padding-top: 1rem;
@@ -187,11 +187,13 @@ body {
     }
     #toggle-#{$i}:checked ~ .heart1 {
       opacity: 1;
-      transition: 0.3s;
+      transition: 1s;
+      transform-origin: left;
     }
     #toggle-#{$i}:checked ~ .heart2 {
       opacity: 0;
-      transition: 0.3s;
+      transition: 1s;
+      transform-origin: bottom;
     }
   }
 }

@@ -1,6 +1,6 @@
 button {
   @include font(0.9rem, 600);
-  background-color: $primary;
+  background: linear-gradient(#fd6c9e, #7f00ff);
   color: white;
   border-style: none;
   box-shadow: 0px 8px 12px 1px #6e6e6e;
@@ -11,8 +11,8 @@ button {
   border-radius: 30px;
   margin-bottom: 2em;
   &:hover {
-    background-color: lighten($color: $primary, $amount: 10);
-    transition: 0.3s;
+    background: linear-gradient(lighten(#fd6c9e, 10), lighten(#7f00ff, 10));
     box-shadow: 0px 0px 5px 3px #6e6e6e;
+    transition: all 0.3s;
   }
 }
