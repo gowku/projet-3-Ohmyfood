@@ -672,12 +672,12 @@ main {
 }
 
 #toggle-menu:checked ~ .heart-menu-1 {
-  transition: 0.3s;
+  transition: 1s;
   opacity: 1;
 }
 
 #toggle-menu:checked ~ .heart-menu-2 {
-  transition: 0.3s;
+  transition: 1s;
   opacity: 0;
 }
 
@@ -1037,12 +1037,12 @@ main {
 }
 
 #toggle-menu:checked ~ .heart-menu-1 {
-  transition: 0.3s;
+  transition: 1s;
   opacity: 1;
 }
 
 #toggle-menu:checked ~ .heart-menu-2 {
-  transition: 0.3s;
+  transition: 1s;
   opacity: 0;
 }
 
@@ -1402,12 +1402,12 @@ main {
 }
 
 #toggle-menu:checked ~ .heart-menu-1 {
-  transition: 0.3s;
+  transition: 1s;
   opacity: 1;
 }
 
 #toggle-menu:checked ~ .heart-menu-2 {
-  transition: 0.3s;
+  transition: 1s;
   opacity: 0;
 }
 
@@ -1764,6 +1764,10 @@ footer ul li a {
 
 .fa-solid {
   fill: url(#gradient);
+}
+
+.svg-color {
+  color: url(#gradient);
 }
 
 .fa-regular {
