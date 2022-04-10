@@ -34,28 +34,18 @@
 }
 @-webkit-keyframes apparition-menu {
   0% {
-    transform: translateY(-300%);
     opacity: 0;
   }
-  99% {
-    transform: translateY(-10%);
-    opacity: 1;
-  }
   100% {
-    transform: translateY(0%);
+    opacity: 1;
   }
 }
 @keyframes apparition-menu {
   0% {
-    transform: translateY(-300%);
     opacity: 0;
   }
-  99% {
-    transform: translateY(-10%);
-    opacity: 1;
-  }
   100% {
-    transform: translateY(0%);
+    opacity: 1;
   }
 }
 @-webkit-keyframes opacity {
@@ -525,11 +515,6 @@ main {
   gap: 0;
 }
 
-.carte-0 {
-  -webkit-animation: apparition-menu 1.5s ease calc(0 * 0.5s);
-          animation: apparition-menu 1.5s ease calc(0 * 0.5s);
-}
-
 .entree_title,
 .plats_title,
 .dessert_title {
@@ -572,6 +557,7 @@ main {
   overflow: hidden;
   box-shadow: 0px 0px 5px 1px #6e6e6e;
   position: relative;
+  opacity: 0;
 }
 .entree_cards_card_left,
 .plats_cards_card_left,
@@ -681,734 +667,54 @@ main {
   opacity: 0;
 }
 
-.box label {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  top: 0;
-  z-index: 1;
-}
-.box #toggle-card-1 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-1 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-1:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-1:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-2 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-2 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-2:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-2:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-3 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-3 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-3:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-3:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-4 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-4 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-4:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-4:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-5 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-5 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-5:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-5:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-6 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-6 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-6:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-6:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-7 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-7 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-7:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-7:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-8 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-8 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-8:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-8:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-9 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-9 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-9:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-9:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-10 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-10 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-10:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-10:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
+.apparition-0 {
+  -webkit-animation: apparition-menu 1.125s ease calc(0 * 0.125s) forwards;
+          animation: apparition-menu 1.125s ease calc(0 * 0.125s) forwards;
 }
 
-.carte-1 {
-  -webkit-animation: apparition-menu 1.5s ease calc(1 * 0.5s);
-          animation: apparition-menu 1.5s ease calc(1 * 0.5s);
+.apparition-1 {
+  -webkit-animation: apparition-menu 1.125s ease calc(1 * 0.125s) forwards;
+          animation: apparition-menu 1.125s ease calc(1 * 0.125s) forwards;
 }
 
-.entree_title,
-.plats_title,
-.dessert_title {
-  align-content: start;
-  margin: 2rem 0 0 2rem;
-  display: flex;
-  flex-direction: column;
-}
-.entree_title::after,
-.plats_title::after,
-.dessert_title::after {
-  content: "";
-  width: 3.5rem;
-  height: 4px;
-  background-color: #99e2d0;
-}
-.entree_cards,
-.plats_cards,
-.dessert_cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  height: auto;
-  padding: 1rem 0;
-}
-.entree_cards_card,
-.plats_cards_card,
-.dessert_cards_card {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-direction: row;
-  gap: 0;
-  border-radius: 25px;
-  width: 95%;
-  height: 6rem;
-  background-color: white;
-  overflow: hidden;
-  box-shadow: 0px 0px 5px 1px #6e6e6e;
-  position: relative;
-}
-.entree_cards_card_left,
-.plats_cards_card_left,
-.dessert_cards_card_left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 0.5rem;
-  height: 100%;
-  margin-left: 1em;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.entree_cards_card_left-title,
-.plats_cards_card_left-title,
-.dessert_cards_card_left-title {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin-top: 1rem;
-  width: 100%;
-}
-.entree_cards_card_left-description,
-.plats_cards_card_left-description,
-.dessert_cards_card_left-description {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 100%;
-}
-.entree_cards_card_right,
-.plats_cards_card_right,
-.dessert_cards_card_right {
-  display: flex;
-  width: 10rem;
-  height: 100%;
-  margin-right: -5rem;
-}
-.entree_cards_card_right-price,
-.plats_cards_card_right-price,
-.dessert_cards_card_right-price {
-  padding-top: 4rem;
-  width: 50%;
-  border-radius: 0 25px 25px 0;
-}
-.entree_cards_card_right-span,
-.plats_cards_card_right-span,
-.dessert_cards_card_right-span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
-  border-radius: 0 25px 25px 0;
-  width: 50%;
-  height: 100%;
-  background-color: #99e2d0;
-}
-.entree_cards_card_right-span i,
-.plats_cards_card_right-span i,
-.dessert_cards_card_right-span i {
-  font-size: 1.8rem;
-  color: white;
+.apparition-2 {
+  -webkit-animation: apparition-menu 1.125s ease calc(2 * 0.125s) forwards;
+          animation: apparition-menu 1.125s ease calc(2 * 0.125s) forwards;
 }
 
-.commander {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
-  margin: 2rem 0;
+.apparition-3 {
+  -webkit-animation: apparition-menu 1.125s ease calc(3 * 0.125s) forwards;
+          animation: apparition-menu 1.125s ease calc(3 * 0.125s) forwards;
 }
 
-.resto-name-hearts label {
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  opacity: 1;
-  right: 2rem;
-  top: 3.5rem;
-  z-index: 1;
+.apparition-4 {
+  -webkit-animation: apparition-menu 1.125s ease calc(4 * 0.125s) forwards;
+          animation: apparition-menu 1.125s ease calc(4 * 0.125s) forwards;
 }
 
-#toggle-menu {
-  position: absolute;
-  display: none;
-}
-#toggle-menu input {
-  width: 0.5rem;
-  height: 0.5rem;
-  right: 1rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+.apparition-5 {
+  -webkit-animation: apparition-menu 1.125s ease calc(5 * 0.125s) forwards;
+          animation: apparition-menu 1.125s ease calc(5 * 0.125s) forwards;
 }
 
-#toggle-menu:checked ~ .heart-menu-1 {
-  transition: 1s;
-  opacity: 1;
+.apparition-6 {
+  -webkit-animation: apparition-menu 1.125s ease calc(6 * 0.125s) forwards;
+          animation: apparition-menu 1.125s ease calc(6 * 0.125s) forwards;
 }
 
-#toggle-menu:checked ~ .heart-menu-2 {
-  transition: 1s;
-  opacity: 0;
+.apparition-7 {
+  -webkit-animation: apparition-menu 1.125s ease calc(7 * 0.125s) forwards;
+          animation: apparition-menu 1.125s ease calc(7 * 0.125s) forwards;
 }
 
-.box label {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  top: 0;
-  z-index: 1;
-}
-.box #toggle-card-1 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-1 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-1:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-1:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-2 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-2 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-2:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-2:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-3 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-3 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-3:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-3:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-4 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-4 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-4:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-4:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-5 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-5 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-5:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-5:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-6 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-6 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-6:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-6:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-7 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-7 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-7:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-7:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-8 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-8 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-8:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-8:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-9 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-9 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-9:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-9:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
-}
-.box #toggle-card-10 {
-  position: absolute;
-  display: none;
-}
-.box #toggle-card-10 input {
-  width: 0.5rem;
-  height: 0.5rem;
-  left: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.box #toggle-card-10:checked ~ .slide {
-  margin-right: 0;
-  transition: 0.5s ease;
-}
-.box #toggle-card-10:checked ~ .slide span i {
-  -webkit-animation: check-spinner 1s ease-in-out;
-          animation: check-spinner 1s ease-in-out;
+.apparition-8 {
+  -webkit-animation: apparition-menu 1.125s ease calc(8 * 0.125s) forwards;
+          animation: apparition-menu 1.125s ease calc(8 * 0.125s) forwards;
 }
 
-.carte-2 {
-  -webkit-animation: apparition-menu 1.5s ease calc(2 * 0.5s);
-          animation: apparition-menu 1.5s ease calc(2 * 0.5s);
-}
-
-.entree_title,
-.plats_title,
-.dessert_title {
-  align-content: start;
-  margin: 2rem 0 0 2rem;
-  display: flex;
-  flex-direction: column;
-}
-.entree_title::after,
-.plats_title::after,
-.dessert_title::after {
-  content: "";
-  width: 3.5rem;
-  height: 4px;
-  background-color: #99e2d0;
-}
-.entree_cards,
-.plats_cards,
-.dessert_cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  height: auto;
-  padding: 1rem 0;
-}
-.entree_cards_card,
-.plats_cards_card,
-.dessert_cards_card {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-direction: row;
-  gap: 0;
-  border-radius: 25px;
-  width: 95%;
-  height: 6rem;
-  background-color: white;
-  overflow: hidden;
-  box-shadow: 0px 0px 5px 1px #6e6e6e;
-  position: relative;
-}
-.entree_cards_card_left,
-.plats_cards_card_left,
-.dessert_cards_card_left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 0.5rem;
-  height: 100%;
-  margin-left: 1em;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.entree_cards_card_left-title,
-.plats_cards_card_left-title,
-.dessert_cards_card_left-title {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin-top: 1rem;
-  width: 100%;
-}
-.entree_cards_card_left-description,
-.plats_cards_card_left-description,
-.dessert_cards_card_left-description {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 100%;
-}
-.entree_cards_card_right,
-.plats_cards_card_right,
-.dessert_cards_card_right {
-  display: flex;
-  width: 10rem;
-  height: 100%;
-  margin-right: -5rem;
-}
-.entree_cards_card_right-price,
-.plats_cards_card_right-price,
-.dessert_cards_card_right-price {
-  padding-top: 4rem;
-  width: 50%;
-  border-radius: 0 25px 25px 0;
-}
-.entree_cards_card_right-span,
-.plats_cards_card_right-span,
-.dessert_cards_card_right-span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
-  border-radius: 0 25px 25px 0;
-  width: 50%;
-  height: 100%;
-  background-color: #99e2d0;
-}
-.entree_cards_card_right-span i,
-.plats_cards_card_right-span i,
-.dessert_cards_card_right-span i {
-  font-size: 1.8rem;
-  color: white;
-}
-
-.commander {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0;
-  margin: 2rem 0;
-}
-
-.resto-name-hearts label {
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  opacity: 1;
-  right: 2rem;
-  top: 3.5rem;
-  z-index: 1;
-}
-
-#toggle-menu {
-  position: absolute;
-  display: none;
-}
-#toggle-menu input {
-  width: 0.5rem;
-  height: 0.5rem;
-  right: 1rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-#toggle-menu:checked ~ .heart-menu-1 {
-  transition: 1s;
-  opacity: 1;
-}
-
-#toggle-menu:checked ~ .heart-menu-2 {
-  transition: 1s;
-  opacity: 0;
+.apparition-9 {
+  -webkit-animation: apparition-menu 1.125s ease calc(9 * 0.125s) forwards;
+          animation: apparition-menu 1.125s ease calc(9 * 0.125s) forwards;
 }
 
 .box label {
