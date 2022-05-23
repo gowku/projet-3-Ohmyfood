@@ -3,7 +3,8 @@
 C'est le troisième projet du parcours développeur web chez OpenClassrooms .
 L'objectif est de développer un site proposant le menu de 4 grands restaurants parisiens ainsi que permettre la réservation en ligne et la composition de menus. (cf images ci-dessous).
 
-(http://image.noelshack.com/fichiers/2022/21/1/1653305089-accueil.png)
+http://image.noelshack.com/fichiers/2022/21/1/1653305089-accueil.png
+
 http://image.noelshack.com/fichiers/2022/21/1/1653305095-menu-a-la-francaise.png
 
 Le site est visible sur github pages : https://gowku.github.io/projet-2-booki/
